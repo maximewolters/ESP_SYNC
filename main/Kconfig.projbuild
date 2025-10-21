@@ -1,0 +1,10 @@
+menu "Sync example"
+choice SYNC_ROLE_CHOICE
+    prompt "Device role"
+    default SYNC_ROLE_MASTER
+config SYNC_ROLE_MASTER
+    bool "Master (transmitter)"
+config SYNC_ROLE_SLAVE
+    bool "Slave (receiver)"
+endchoice
+endmenu

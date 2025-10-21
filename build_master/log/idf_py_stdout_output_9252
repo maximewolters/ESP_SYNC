@@ -1,0 +1,136 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  6 2025 12:28:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c4a0h ( 50336) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c4c8 vaddr=3fc93800 size=02a18h ( 10776) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001eee8 vaddr=40374000 size=01130h (  4400) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c6a8h (116392) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c6d0 vaddr=40375130 size=0e650h ( 58960) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004ad28 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) app_init: Application information:[0m
+[0;32mI (171) app_init: Project name:     syncpulse[0m
+[0;32mI (175) app_init: App version:      1[0m
+[0;32mI (179) app_init: Compile time:     Oct 20 2025 13:33:24[0m
+[0;32mI (184) app_init: ELF file SHA256:  2c5f60867...[0m
+[0;32mI (188) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FC96B60 len 00052BB0 (330 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (220) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (225) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (237) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (283) SYNC: App starting...[0m
+[0;32mI (283) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (283) mcpwm: cap_timer resolution is not adjustable in current target, still 80000000Hz[0m
+[0;32mI (293) SYNC: Capture res: 80.00 MHz (tick=12.50 ns)[0m
+[0;33mW (303) uart: GPIO 9 is not usable, maybe used by others[0m
+[0;33mW (303) uart: GPIO 4 is not usable, maybe used by others[0m
+[0;32mI (363) SYNC: Running as SLAVE. TX=9 RX=10[0m
+[0;32mI (363) main_task: Returned from app_main()[0m
+[0;33mW (5363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (10363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (15363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (20363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (25363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (30363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (35363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (40363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (45363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (50363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (55363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (60363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (65363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (70363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (75363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (80363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (85363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (90363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (95363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (100363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (105363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (110363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (115363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (120363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (125363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (130363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (135363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (140363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (145363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (150363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (155363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (160363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (165363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (170363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (175363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (180363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (185363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (190363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (195363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (200363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (205363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (210363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (215363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (220363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (225363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (230363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (235363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (240363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (245363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (250363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (255363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (260363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (265363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (270363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (275363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (280363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (285363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (290363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (295363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (300363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (305363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (310363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (315363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (320363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (325363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (330363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (335363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (340363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (345363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (350363) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (355363) SYNC: Unexpected type -1 (sync hdr)[0m

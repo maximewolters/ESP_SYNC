@@ -1,0 +1,5595 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  6 2025 13:55:27[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b388h ( 45960) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001b3b0 vaddr=3fc93400 size=029e8h ( 10728) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001dda0 vaddr=40374000 size=02278h (  8824) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a018h (106520) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003a040 vaddr=40376278 size=0d0d8h ( 53464) load[0m
+[0;32mI (141) esp_image: segment 5: paddr=00047120 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (148) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (159) cpu_start: Multicore app[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (168) app_init: Application information:[0m
+[0;32mI (168) app_init: Project name:     syncpulse[0m
+[0;32mI (172) app_init: App version:      1[0m
+[0;32mI (176) app_init: Compile time:     Oct  6 2025 16:15:57[0m
+[0;32mI (181) app_init: ELF file SHA256:  8042ee173...[0m
+[0;32mI (185) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (189) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (193) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (197) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (201) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FC966B8 len 00053058 (332 KiB): RAM[0m
+[0;32mI (212) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (222) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: generic[0m
+[0;32mI (231) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (280) main_task: Calling app_main()[0m
+App starting...
+Initializing UART1 on TX=17 RX=18 ...
+[0;32mI (280) uart: queue free spaces: 10[0m
+UART1 initialized.
+Running as SLAVE.
+[SLAVE] UART event task started.
+[0;32mI (290) main_task: Returned from app_main()[0m
+[SLAVE] SYNC BREAK detected at 3053687 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 6053664 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 9053685 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 12053705 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 15053725 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 18053745 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 21053765 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 24053785 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 27053805 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 30053825 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 33053844 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 36053864 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 39053884 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 42053903 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 45053923 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 48053942 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 51053962 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 54053981 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 57054001 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 60054020 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 63054039 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 66054059 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 69054078 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 72054097 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 75054116 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 78054136 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 81054155 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 84054174 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 87054193 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 90054212 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 93054231 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 96054250 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 99054269 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 102054288 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 105054307 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 108054325 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 111054344 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 114054363 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 117054382 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 120054400 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 123054419 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 126054438 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 129054456 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 132054475 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 135054493 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 138054512 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 141054530 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 144054549 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 147054567 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 150054585 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 153054604 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 156054622 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 159054641 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 162054659 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 165054677 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 168054696 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 171054714 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 174054732 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 177054750 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 180054769 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 183054787 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 186054805 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 189054823 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 192054842 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 195054860 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 198054878 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 201054896 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 204054914 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 207054933 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 210054951 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 213054969 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 216054987 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 219055005 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 222055023 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 225055041 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 228055059 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 231055077 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 234055095 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 237055113 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 240055131 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 243055149 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 246055167 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 249055185 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 252055203 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 255055221 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 258055239 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 261055256 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 264055274 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 267055292 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 270055310 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 273055328 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 276055346 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 279055364 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 282055381 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 285055400 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 288055417 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 291055435 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 294055453 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 297055471 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 300055488 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 303055506 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 306055524 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 309055542 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 312055560 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 315055578 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 318055595 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 321055613 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 324055631 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 327055649 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 330055666 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 333055684 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 336055702 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 339055720 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 342055737 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 345055755 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 348055773 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 351055791 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 354055808 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 357055826 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 360055844 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 363055862 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 366055879 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 369055897 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 372055915 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 375055932 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 378055950 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 381055968 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 384055986 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 387056003 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 390056021 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 393056039 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 396056056 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 399056074 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 402056092 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 405056110 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 408056127 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 411056145 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 414056163 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 417056180 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 420056198 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 423056216 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 426056234 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 429056251 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 432056269 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 435056287 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 438056304 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 441056322 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 444056340 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 447056357 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 450056375 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 453056393 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 456056410 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 459056428 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 462056446 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 465056463 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 468056481 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 471056499 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 474056516 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 477056534 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 480056552 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 483056569 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 486056587 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 489056605 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 492056622 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 495056640 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 498056657 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 501056675 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 504056693 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 507056710 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 510056728 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 513056746 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 516056763 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 519056781 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 522056798 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 525056816 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 528056833 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 531056851 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 534056869 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 537056886 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 540056904 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 543056921 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 546056939 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 549056956 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 552056974 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 555056991 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 558057009 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 561057026 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 564057044 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 567057061 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 570057079 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 573057096 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 576057114 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 579057131 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 582057149 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 585057166 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 588057184 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 591057201 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 594057228 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 597057245 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 600057254 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 603057271 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 606057289 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 609057306 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 612057324 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 615057341 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 618057359 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 621057377 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 624057394 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 627057412 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 630057429 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 633057447 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 636057464 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 639057482 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 642057499 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 645057517 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 648057534 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 651057552 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 654057569 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 657057587 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 660057604 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 663057621 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 666057639 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 669057656 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 672057674 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 675057691 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 678057709 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 681057726 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 684057744 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 687057761 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 690057779 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 693057796 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 696057814 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 699057831 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 702057848 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 705057866 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 708057883 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 711057901 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 714057918 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 717057936 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 720057953 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 723057971 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 726057988 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 729058006 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 732058023 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 735058040 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 738058058 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 741058075 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 744058093 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 747058110 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 750058128 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 753058145 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 756058163 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 759058180 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 762058198 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 765058215 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 768058232 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 771058250 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 774058267 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 777058285 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 780058302 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 783058319 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 786058337 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 789058354 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 792058372 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 795058389 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 798058406 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 801058424 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 804058441 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 807058459 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 810058476 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 813058493 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 816058511 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 819058528 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 822058545 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 825058563 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 828058580 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 831058597 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 834058615 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 837058632 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 840058649 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 843058667 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 846058684 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 849058701 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 852058719 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 855058736 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 858058753 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 861058771 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 864058788 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 867058805 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 870058823 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 873058840 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 876058857 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 879058874 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 882058891 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 885058909 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 888058926 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 891058943 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 894058960 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 897058978 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 900058995 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 903059012 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 906059030 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 909059047 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 912059064 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 915059081 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 918059099 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 921059116 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 924059133 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 927059150 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 930059168 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 933059185 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 936059202 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 939059220 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 942059237 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 945059254 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 948059271 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 951059289 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 954059306 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 957059323 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 960059341 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 963059358 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 966059375 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 969059392 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 972059410 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 975059427 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 978059444 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 981059461 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 984059479 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 987059496 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 990059513 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 993059530 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 996059548 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 999059565 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1002059582 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1005059599 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1008059617 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1011059634 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1014059651 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1017059668 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1020059685 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1023059703 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1026059720 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1029059737 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1032059754 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1035059771 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1038059789 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1041059806 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1044059823 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1047059840 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1050059858 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1053059875 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1056059892 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1059059909 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1062059926 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1065059944 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1068059961 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1071059978 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1074059995 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1077060013 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1080060030 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1083060047 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1086060064 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1089060082 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1092060099 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1095060116 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1098060134 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1101060151 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1104060169 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1107060186 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1110060203 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1113060220 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1116060238 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1119060255 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1122060272 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1125060290 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1128060307 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1131060324 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1134060341 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1137060359 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1140060376 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1143060393 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1146060411 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1149060428 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1152060445 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1155060462 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1158060480 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1161060497 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1164060514 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1167060531 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1170060549 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1173060566 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1176060583 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1179060601 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1182060618 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1185060635 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1188060652 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1191060670 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1194060687 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1197060704 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1200060721 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1203060739 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1206060756 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1209060773 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1212060791 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1215060808 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1218060825 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1221060843 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1224060860 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1227060877 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1230060895 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1233060912 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1236060929 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1239060946 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1242060964 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1245060981 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1248060998 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1251061016 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1254061033 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1257061050 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1260061068 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1263061085 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1266061102 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1269061120 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1272061137 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1275061154 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1278061172 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1281061189 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1284061206 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1287061223 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1290061241 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1293061258 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1296061275 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1299061293 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1302061310 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1305061327 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1308061344 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1311061362 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1314061379 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1317061396 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1320061414 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1323061431 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1326061448 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1329061466 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1332061483 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1335061500 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1338061518 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1341061535 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1344061552 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1347061570 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1350061587 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1353061604 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1356061622 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1359061639 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1362061656 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1365061674 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1368061691 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1371061708 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1374061725 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1377061743 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1380061760 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1383061777 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1386061794 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1389061812 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1392061829 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1395061846 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1398061863 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1401061881 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1404061898 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1407061915 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1410061932 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1413061950 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1416061967 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1419061984 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1422062001 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1425062019 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1428062036 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1431062053 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1434062070 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1437062087 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1440062105 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1443062122 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1446062139 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1449062156 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1452062174 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1455062191 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1458062208 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1461062226 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1464062244 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1467062260 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1470062277 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1473062295 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1476062312 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1479062329 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1482062347 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1485062364 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1488062381 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1491062399 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1494062416 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1497062433 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1500062451 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1503062468 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1506062485 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1509062503 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1512062520 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1515062537 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1518062555 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1521062572 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1524062589 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1527062607 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1530062624 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1533062641 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1536062659 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1539062676 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1542062693 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1545062711 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1548062728 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1551062745 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1554062763 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1557062780 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1560062797 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1563062814 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1566062832 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1569062849 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1572062867 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1575062884 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1578062901 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1581062918 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1584062935 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1587062953 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1590062970 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1593062987 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1596063004 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1599063022 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1602063039 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1605063056 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1608063073 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1611063091 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1614063108 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1617063125 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1620063142 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1623063159 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1626063176 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1629063194 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1632063211 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1635063228 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1638063245 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1641063262 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1644063280 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1647063297 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1650063314 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1653063331 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1656063349 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1659063366 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1662063383 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1665063400 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1668063418 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1671063435 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1674063452 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1677063469 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1680063487 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1683063504 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1686063521 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1689063539 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1692063556 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1695063573 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1698063590 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1701063608 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1704063625 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1707063642 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1710063659 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1713063677 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1716063694 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1719063711 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1722063729 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1725063746 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1728063763 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1731063780 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1734063798 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1737063815 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1740063832 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1743063850 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1746063867 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1749063884 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1752063901 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1755063919 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1758063936 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1761063953 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1764063970 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1767063988 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1770064005 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1773064022 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1776064039 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1779064057 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1782064074 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1785064091 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1788064108 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1791064126 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1794064143 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1797064160 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1800064177 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1803064194 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1806064212 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1809064229 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1812064246 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1815064263 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1818064280 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1821064297 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1824064315 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1827064332 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1830064349 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1833064366 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1836064383 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1839064401 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1842064418 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1845064435 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1848064452 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1851064469 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1854064487 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1857064504 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1860064521 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1863064538 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1866064555 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1869064573 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1872064590 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1875064607 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1878064624 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1881064641 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1884064658 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1887064676 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1890064693 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1893064710 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1896064727 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1899064744 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1902064761 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1905064778 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1908064796 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1911064813 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1914064830 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1917064847 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1920064864 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1923064881 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1926064898 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1929064915 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1932064932 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1935064950 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1938064967 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1941064984 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1944065001 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1947065018 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1950065035 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1953065052 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1956065069 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1959065086 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1962065103 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1965065120 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1968065137 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1971065155 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1974065172 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1977065189 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1980065206 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1983065223 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1986065240 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1989065257 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1992065273 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1995065290 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 1998065307 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2001065324 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2004065341 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2007065358 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2010065375 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2013065392 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2016065409 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2019065426 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2022065443 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2025065460 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2028065477 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2031065494 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2034065512 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2037065529 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2040065546 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2043065563 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2046065580 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2049065597 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2052065614 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2055065631 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2058065648 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2061065665 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2064065682 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2067065699 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2070065716 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2073065733 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2076065750 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2079065767 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2082065784 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2085065801 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2088065818 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2091065835 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2094065852 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2097065869 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2100065886 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2103065903 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2106065920 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2109065937 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2112065954 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2115065971 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2118065988 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2121066005 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2124066023 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2127066040 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2130066057 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2133066074 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2136066091 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2139066108 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2142066125 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2145066142 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2148066159 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2151066176 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2154066193 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2157066210 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2160066227 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2163066244 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2166066261 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2169066278 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2172066295 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2175066312 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2178066329 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2181066346 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2184066363 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2187066380 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2190066397 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2193066414 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2196066431 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2199066448 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2202066465 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2205066482 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2208066499 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2211066515 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2214066532 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2217066549 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2220066566 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2223066583 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2226066600 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2229066617 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2232066634 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2235066651 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2238066668 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2241066685 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2244066701 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2247066718 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2250066735 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2253066752 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2256066769 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2259066786 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2262066803 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2265066820 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2268066837 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2271066854 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2274066871 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2277066888 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2280066905 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2283066922 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2286066939 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2289066956 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2292066973 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2295066990 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2298067007 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2301067024 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2304067041 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2307067058 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2310067075 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2313067092 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2316067110 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2319067127 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2322067144 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2325067161 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2328067178 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2331067195 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2334067212 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2337067239 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2340067254 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2343067264 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2346067281 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2349067298 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2352067315 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2355067333 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2358067350 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2361067367 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2364067384 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2367067401 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2370067419 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2373067436 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2376067453 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2379067470 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2382067487 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2385067504 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2388067522 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2391067539 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2394067556 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2397067573 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2400067591 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2403067608 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2406067625 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2409067642 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2412067659 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2415067677 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2418067694 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2421067711 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2424067728 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2427067745 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2430067763 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2433067780 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2436067797 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2439067814 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2442067831 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2445067848 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2448067865 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2451067883 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2454067900 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2457067917 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2460067934 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2463067952 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2466067969 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2469067986 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2472068003 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2475068020 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2478068038 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2481068055 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2484068072 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2487068089 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2490068106 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2493068124 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2496068141 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2499068158 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2502068175 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2505068193 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2508068210 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2511068227 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2514068244 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2517068261 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2520068279 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2523068296 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2526068313 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2529068330 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2532068348 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2535068365 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2538068382 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2541068399 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2544068416 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2547068434 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2550068451 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2553068468 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2556068485 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2559068502 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2562068519 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2565068537 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2568068554 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2571068571 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2574068588 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2577068605 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2580068622 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2583068639 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2586068657 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2589068674 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2592068691 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2595068708 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2598068725 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2601068742 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2604068759 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2607068776 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2610068794 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2613068811 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2616068828 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2619068845 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2622068862 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2625068879 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2628068896 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2631068913 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2634068930 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2637068947 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2640068964 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2643068982 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2646068999 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2649069016 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2652069033 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2655069050 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2658069067 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2661069084 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2664069101 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2667069118 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2670069135 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2673069153 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2676069170 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2679069187 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2682069204 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2685069221 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2688069238 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2691069255 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2694069272 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2697069289 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2700069306 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2703069324 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2706069341 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2709069358 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2712069375 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2715069392 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2718069409 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2721069426 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2724069443 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2727069461 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2730069478 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2733069495 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2736069512 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2739069529 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2742069546 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2745069563 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2748069580 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2751069597 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2754069614 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2757069632 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2760069649 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2763069666 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2766069683 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2769069700 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2772069717 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2775069734 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2778069751 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2781069768 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2784069785 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2787069803 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2790069820 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2793069837 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2796069854 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2799069871 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2802069888 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2805069905 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2808069922 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2811069940 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2814069957 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2817069974 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2820069991 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2823070008 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2826070025 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2829070042 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2832070059 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2835070076 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2838070093 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2841070110 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2844070128 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2847070145 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2850070162 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2853070179 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2856070196 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2859070213 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2862070230 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2865070247 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2868070264 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2871070281 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2874070298 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2877070315 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2880070332 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2883070349 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2886070366 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2889070383 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2892070400 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2895070417 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2898070434 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2901070451 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2904070468 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2907070485 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2910070502 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2913070519 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2916070536 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2919070553 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2922070570 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2925070587 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2928070604 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2931070622 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2934070639 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2937070656 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2940070673 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2943070690 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2946070707 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2949070725 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2952070742 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2955070759 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2958070776 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2961070793 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2964070811 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2967070828 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2970070845 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2973070862 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2976070880 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2979070897 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2982070914 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2985070931 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2988070948 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2991070965 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2994070983 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 2997071000 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3000071017 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3003071034 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3006071052 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3009071069 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3012071086 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3015071103 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3018071120 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3021071138 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3024071155 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3027071172 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3030071189 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3033071206 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3036071224 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3039071241 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3042071258 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3045071275 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3048071292 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3051071310 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3054071327 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3057071344 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3060071361 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3063071379 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3066071396 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3069071413 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3072071430 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3075071447 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3078071465 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3081071482 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3084071499 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3087071516 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3090071533 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3093071551 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3096071568 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3099071585 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3102071602 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3105071619 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3108071636 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3111071653 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3114071671 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3117071688 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3120071705 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3123071722 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3126071739 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3129071756 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3132071773 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3135071791 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3138071808 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3141071825 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3144071842 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3147071859 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3150071876 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3153071893 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3156071911 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3159071928 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3162071945 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3165071962 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3168071979 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3171071996 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3174072013 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3177072031 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3180072048 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3183072065 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3186072082 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3189072099 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3192072116 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3195072133 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3198072150 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3201072168 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3204072185 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3207072202 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3210072219 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3213072236 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3216072254 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3219072270 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3222072287 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3225072305 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3228072322 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3231072339 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3234072356 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3237072373 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3240072390 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3243072407 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3246072424 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3249072441 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3252072459 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3255072476 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3258072493 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3261072510 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3264072527 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3267072544 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3270072561 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3273072578 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3276072595 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3279072612 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3282072630 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3285072647 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3288072664 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3291072681 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3294072698 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3297072715 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3300072732 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3303072749 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3306072766 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3309072783 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3312072800 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3315072818 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3318072835 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3321072852 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3324072869 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3327072886 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3330072903 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3333072920 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3336072937 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3339072955 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3342072972 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3345072989 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3348073006 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3351073023 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3354073040 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3357073057 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3360073075 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3363073092 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3366073109 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3369073126 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3372073143 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3375073160 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3378073177 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3381073195 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3384073212 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3387073229 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3390073246 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3393073263 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3396073280 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3399073297 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3402073314 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3405073331 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3408073348 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3411073366 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3414073383 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3417073400 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3420073417 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3423073434 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3426073451 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3429073468 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3432073485 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3435073502 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3438073520 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3441073537 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3444073554 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3447073571 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3450073588 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3453073605 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3456073622 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3459073639 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3462073656 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3465073673 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3468073690 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3471073708 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3474073725 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3477073742 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3480073759 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3483073776 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3486073793 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3489073810 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3492073827 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3495073844 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3498073861 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3501073878 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3504073896 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3507073913 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3510073930 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3513073947 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3516073964 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3519073981 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3522073999 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3525074016 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3528074033 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3531074050 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3534074067 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3537074084 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3540074102 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3543074119 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3546074136 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3549074153 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3552074170 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3555074187 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3558074205 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3561074222 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3564074239 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3567074256 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3570074273 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3573074290 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3576074307 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3579074325 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3582074342 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3585074359 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3588074376 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3591074393 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3594074410 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3597074428 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3600074445 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3603074462 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3606074479 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3609074496 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3612074513 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3615074531 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3618074548 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3621074565 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3624074582 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3627074599 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3630074617 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3633074634 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3636074651 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3639074668 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3642074685 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3645074702 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3648074720 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3651074737 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3654074754 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3657074771 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3660074788 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3663074805 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3666074822 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3669074840 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3672074857 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3675074874 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3678074891 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3681074908 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3684074925 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3687074943 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3690074960 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3693074977 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3696074994 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3699075011 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3702075028 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3705075045 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3708075063 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3711075080 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3714075097 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3717075114 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3720075131 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3723075148 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3726075165 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3729075183 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3732075200 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3735075217 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3738075234 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3741075251 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3744075268 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3747075285 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3750075302 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3753075320 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3756075337 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3759075354 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3762075371 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3765075388 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3768075405 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3771075422 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3774075439 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3777075456 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3780075474 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3783075491 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3786075508 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3789075525 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3792075542 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3795075559 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3798075576 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3801075593 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3804075610 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3807075628 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3810075645 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3813075662 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3816075679 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3819075696 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3822075713 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3825075730 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3828075747 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3831075765 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3834075782 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3837075799 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3840075816 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3843075833 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3846075850 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3849075867 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3852075885 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3855075902 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3858075919 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3861075936 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3864075953 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3867075970 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3870075987 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3873076005 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3876076022 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3879076039 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3882076056 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3885076073 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3888076090 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3891076107 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3894076125 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3897076142 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3900076159 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3903076176 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3906076193 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3909076210 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3912076228 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3915076245 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3918076262 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3921076279 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3924076296 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3927076313 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3930076330 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3933076347 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3936076364 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3939076381 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3942076398 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3945076415 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3948076432 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3951076449 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3954076466 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3957076484 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3960076501 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3963076518 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3966076535 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3969076552 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3972076569 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3975076586 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3978076603 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3981076620 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3984076637 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3987076654 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3990076671 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3993076688 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3996076705 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 3999076722 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4002076739 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4005076756 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4008076773 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4011076790 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4014076807 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4017076824 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4020076841 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4023076859 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4026076876 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4029076893 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4032076910 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4035076927 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4038076944 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4041076961 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4044076978 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4047076995 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4050077012 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4053077029 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4056077046 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4059077064 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4062077081 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4065077098 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4068077115 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4071077132 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4074077149 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4077077166 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4080077183 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4083077200 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4086077227 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4089077243 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4092077254 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4095077268 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4098077286 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4101077303 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4104077320 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4107077337 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4110077354 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4113077371 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4116077388 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4119077405 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4122077422 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4125077439 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4128077456 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4131077473 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4134077490 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4137077507 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4140077524 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4143077541 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4146077558 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string.
+
+[SLAVE] SYNC BREAK detected at 4149077575 us
+[SLAVE] UART_DATA event (24 bytes)
+[SLAVE] Data: This is a test string

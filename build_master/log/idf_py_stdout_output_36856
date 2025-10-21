@@ -1,0 +1,612 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  6 2025 12:28:26[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b380h ( 45952) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001b3a8 vaddr=3fc93300 size=029e8h ( 10728) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001dd98 vaddr=40374000 size=02280h (  8832) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a42ch (107564) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003a454 vaddr=40376280 size=0cffch ( 53244) load[0m
+[0;32mI (142) esp_image: segment 5: paddr=00047458 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (148) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (148) boot: Disabling RNG early entropy source...[0m
+[0;32mI (159) cpu_start: Multicore app[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (169) app_init: Project name:     syncpulse[0m
+[0;32mI (173) app_init: App version:      1[0m
+[0;32mI (176) app_init: Compile time:     Oct 14 2025 15:15:22[0m
+[0;32mI (181) app_init: ELF file SHA256:  052dab59c...[0m
+[0;32mI (185) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (189) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (193) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (197) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (201) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 3FC965B0 len 00053160 (332 KiB): RAM[0m
+[0;32mI (212) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (223) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: generic[0m
+[0;32mI (232) spi_flash: flash io: dio[0m
+[0;33mW (235) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (280) main_task: Calling app_main()[0m
+[0;32mI (280) SYNC: App starting...[0m
+[0;32mI (280) SYNC: Running as MASTER. TX=17 RX=18[0m
+[0;33mW (1290) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (3300) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (5310) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (7320) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (9330) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (11340) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (13350) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (15360) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (17370) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (19380) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (21390) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (23400) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (25410) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (27420) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (29430) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (31440) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (33450) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (35460) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (37470) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (39480) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (41490) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (43500) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (45510) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (47520) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (49530) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (51540) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (53550) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (55560) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (57570) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (59580) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (61590) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (63600) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (65610) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (67620) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (69630) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (71640) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (73650) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (75660) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (77670) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (79680) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (81690) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (83700) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (85710) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (87720) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (89730) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (91740) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (93750) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (95760) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (97770) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (99780) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (101790) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (103800) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (105810) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (107820) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (109830) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (111840) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (113850) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (115860) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (117870) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (119880) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (121890) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (123900) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (125910) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (127920) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (129930) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (131940) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (133950) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (135960) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (137970) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (139980) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (141990) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (144000) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (146010) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (148020) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (150030) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (152040) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (154050) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (156060) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (158070) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (160080) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (162090) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (164100) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (166110) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (168120) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (170130) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (172140) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (174150) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (176160) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (178170) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (180180) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (182190) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (184200) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (186210) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (188220) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (190230) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (192240) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (194250) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (196260) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (198270) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (200280) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (202290) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (204300) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (206310) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (208320) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (210330) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (212340) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (214350) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (216360) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (217360) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (218360) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (219360) SYNC: Timeout or bad packet; retrying...[0m
+[0;33mW (220360) SYNC: Timeout or bad packet; retrying...[0m
+[0;32mI (221360) SYNC: t1=221127216 t2=404973 t3=406025 t4=221127273  => delay≈-497 us, offset≈-220721745 us[0m
+[0;32mI (222360) SYNC: t1=222127216 t2=1404978 t3=1405956 t4=222127273  => delay≈-460 us, offset≈-220721777 us[0m
+[0;32mI (223360) SYNC: t1=223127216 t2=2404983 t3=2405960 t4=223127271  => delay≈-461 us, offset≈-220721772 us[0m
+[0;32mI (224360) SYNC: t1=224127216 t2=3406203 t3=3407112 t4=224127273  => delay≈-426 us, offset≈-220720587 us[0m
+[0;32mI (225360) SYNC: t1=225127216 t2=4406208 t3=4407117 t4=225127271  => delay≈-427 us, offset≈-220720581 us[0m
+[0;32mI (226360) SYNC: t1=226127216 t2=5406213 t3=5407122 t4=226127273  => delay≈-426 us, offset≈-220720577 us[0m
+[0;32mI (227360) SYNC: t1=227127216 t2=6406218 t3=6407127 t4=227127271  => delay≈-427 us, offset≈-220720571 us[0m
+[0;32mI (228360) SYNC: t1=228127216 t2=7406222 t3=7407132 t4=228127273  => delay≈-426 us, offset≈-220720567 us[0m
+[0;32mI (229360) SYNC: t1=229127216 t2=8406227 t3=8407136 t4=229127271  => delay≈-427 us, offset≈-220720562 us[0m
+[0;32mI (230360) SYNC: t1=230127216 t2=9406232 t3=9407141 t4=230127273  => delay≈-426 us, offset≈-220720558 us[0m
+[0;32mI (231360) SYNC: t1=231127216 t2=10406237 t3=10407146 t4=231127271  => delay≈-427 us, offset≈-220720552 us[0m
+[0;32mI (232360) SYNC: t1=232127216 t2=11406242 t3=11407151 t4=232127273  => delay≈-426 us, offset≈-220720548 us[0m
+[0;32mI (233360) SYNC: t1=233127216 t2=12406247 t3=12407156 t4=233127271  => delay≈-427 us, offset≈-220720542 us[0m
+[0;32mI (234360) SYNC: t1=234127216 t2=13406258 t3=13407161 t4=234127273  => delay≈-423 us, offset≈-220720535 us[0m
+[0;32mI (235360) SYNC: t1=235127216 t2=14406255 t3=14407165 t4=235127271  => delay≈-427 us, offset≈-220720533 us[0m
+[0;32mI (236360) SYNC: t1=236127216 t2=15406260 t3=15407170 t4=236127273  => delay≈-426 us, offset≈-220720529 us[0m
+[0;32mI (237360) SYNC: t1=237127216 t2=16406265 t3=16407175 t4=237127271  => delay≈-427 us, offset≈-220720523 us[0m
+[0;32mI (238360) SYNC: t1=238127216 t2=17406270 t3=17407180 t4=238127273  => delay≈-426 us, offset≈-220720519 us[0m
+[0;32mI (239360) SYNC: t1=239127216 t2=18406275 t3=18407185 t4=239127271  => delay≈-427 us, offset≈-220720513 us[0m
+[0;32mI (240360) SYNC: t1=240127216 t2=19406280 t3=19407190 t4=240127273  => delay≈-426 us, offset≈-220720509 us[0m
+[0;32mI (241360) SYNC: t1=241127216 t2=20406284 t3=20407194 t4=241127271  => delay≈-427 us, offset≈-220720504 us[0m
+[0;32mI (242360) SYNC: t1=242127216 t2=21406289 t3=21407199 t4=242127273  => delay≈-426 us, offset≈-220720500 us[0m
+[0;32mI (243360) SYNC: t1=243127216 t2=22406294 t3=22407204 t4=243127271  => delay≈-427 us, offset≈-220720494 us[0m
+[0;32mI (244360) SYNC: t1=244127216 t2=23406299 t3=23407209 t4=244127273  => delay≈-426 us, offset≈-220720490 us[0m
+[0;32mI (245360) SYNC: t1=245127216 t2=24406304 t3=24407268 t4=245127271  => delay≈-454 us, offset≈-220720457 us[0m
+[0;32mI (246360) SYNC: t1=246127216 t2=25406309 t3=25407274 t4=246127273  => delay≈-454 us, offset≈-220720453 us[0m
+[0;32mI (247360) SYNC: t1=247127216 t2=26406314 t3=26407279 t4=247127271  => delay≈-455 us, offset≈-220720447 us[0m
+[0;32mI (248360) SYNC: t1=248127216 t2=27406319 t3=27407284 t4=248127273  => delay≈-454 us, offset≈-220720443 us[0m
+[0;32mI (249360) SYNC: t1=249127216 t2=28406324 t3=28407289 t4=249127271  => delay≈-455 us, offset≈-220720437 us[0m
+[0;32mI (250360) SYNC: t1=250127216 t2=29406329 t3=29407293 t4=250127273  => delay≈-453 us, offset≈-220720433 us[0m
+[0;32mI (251360) SYNC: t1=251127216 t2=30406333 t3=30407296 t4=251127271  => delay≈-454 us, offset≈-220720429 us[0m
+[0;32mI (252360) SYNC: t1=252127216 t2=31406339 t3=31407295 t4=252127273  => delay≈-449 us, offset≈-220720427 us[0m
+[0;32mI (253360) SYNC: t1=253127216 t2=32406343 t3=32407300 t4=253127271  => delay≈-451 us, offset≈-220720422 us[0m
+[0;32mI (254360) SYNC: t1=254127216 t2=33406348 t3=33407305 t4=254127273  => delay≈-450 us, offset≈-220720418 us[0m
+[0;32mI (255360) SYNC: t1=255127216 t2=34406353 t3=34407306 t4=255127271  => delay≈-449 us, offset≈-220720414 us[0m
+[0;32mI (256360) SYNC: t1=256127216 t2=35406358 t3=35407312 t4=256127273  => delay≈-448 us, offset≈-220720409 us[0m
+[0;32mI (257360) SYNC: t1=257127216 t2=36406363 t3=36407312 t4=257127271  => delay≈-447 us, offset≈-220720406 us[0m
+[0;32mI (258360) SYNC: t1=258127216 t2=37406367 t3=37407314 t4=258127273  => delay≈-445 us, offset≈-220720404 us[0m
+[0;32mI (259360) SYNC: t1=259127216 t2=38406373 t3=38407314 t4=259127271  => delay≈-443 us, offset≈-220720400 us[0m
+[0;32mI (260360) SYNC: t1=260127216 t2=39406377 t3=39407313 t4=260127273  => delay≈-439 us, offset≈-220720399 us[0m
+[0;32mI (261360) SYNC: t1=261127216 t2=40406398 t3=40407314 t4=261127271  => delay≈-430 us, offset≈-220720387 us[0m
+[0;32mI (262360) SYNC: t1=262127216 t2=41406387 t3=41407314 t4=262127273  => delay≈-435 us, offset≈-220720394 us[0m
+[0;32mI (263360) SYNC: t1=263127216 t2=42406391 t3=42407314 t4=263127271  => delay≈-434 us, offset≈-220720391 us[0m
+[0;32mI (264360) SYNC: t1=264127216 t2=43406396 t3=43407312 t4=264127273  => delay≈-429 us, offset≈-220720390 us[0m
+[0;32mI (265360) SYNC: t1=265127216 t2=44406401 t3=44407318 t4=265127271  => delay≈-431 us, offset≈-220720384 us[0m
+[0;32mI (266360) SYNC: t1=266127216 t2=45406406 t3=45407318 t4=266127273  => delay≈-427 us, offset≈-220720382 us[0m
+[0;32mI (267360) SYNC: t1=267127216 t2=46406411 t3=46407321 t4=267127271  => delay≈-427 us, offset≈-220720377 us[0m
+[0;32mI (268360) SYNC: t1=268127216 t2=47406416 t3=47407325 t4=268127273  => delay≈-426 us, offset≈-220720374 us[0m
+[0;32mI (269360) SYNC: t1=269127216 t2=48406420 t3=48407330 t4=269127271  => delay≈-427 us, offset≈-220720368 us[0m
+[0;32mI (270360) SYNC: t1=270127216 t2=49406425 t3=49407335 t4=270127273  => delay≈-426 us, offset≈-220720364 us[0m
+[0;32mI (271360) SYNC: t1=271127216 t2=50406430 t3=50407340 t4=271127271  => delay≈-427 us, offset≈-220720358 us[0m
+[0;32mI (272360) SYNC: t1=272127216 t2=51406435 t3=51407345 t4=272127273  => delay≈-426 us, offset≈-220720354 us[0m
+[0;32mI (273360) SYNC: t1=273127216 t2=52406440 t3=52407349 t4=273127271  => delay≈-427 us, offset≈-220720349 us[0m
+[0;32mI (274360) SYNC: t1=274127216 t2=53406445 t3=53407354 t4=274127273  => delay≈-426 us, offset≈-220720345 us[0m
+[0;32mI (275360) SYNC: t1=275127216 t2=54406449 t3=54407359 t4=275127271  => delay≈-427 us, offset≈-220720339 us[0m
+[0;32mI (276360) SYNC: t1=276127216 t2=55406454 t3=55407364 t4=276127273  => delay≈-426 us, offset≈-220720335 us[0m
+[0;32mI (277360) SYNC: t1=277127216 t2=56406459 t3=56407369 t4=277127271  => delay≈-427 us, offset≈-220720329 us[0m
+[0;32mI (278360) SYNC: t1=278127216 t2=57406464 t3=57407374 t4=278127273  => delay≈-426 us, offset≈-220720325 us[0m
+[0;32mI (279360) SYNC: t1=279127216 t2=58406469 t3=58407378 t4=279127271  => delay≈-427 us, offset≈-220720320 us[0m
+[0;32mI (280360) SYNC: t1=280127216 t2=59406474 t3=59407383 t4=280127273  => delay≈-426 us, offset≈-220720316 us[0m
+[0;32mI (281360) SYNC: t1=281127216 t2=60406478 t3=60407388 t4=281127271  => delay≈-427 us, offset≈-220720310 us[0m
+[0;32mI (282360) SYNC: t1=282127216 t2=61406483 t3=61407393 t4=282127273  => delay≈-426 us, offset≈-220720306 us[0m
+[0;32mI (283360) SYNC: t1=283127216 t2=62406488 t3=62407398 t4=283127271  => delay≈-427 us, offset≈-220720300 us[0m
+[0;32mI (284360) SYNC: t1=284127216 t2=63406493 t3=63407403 t4=284127273  => delay≈-426 us, offset≈-220720296 us[0m
+[0;32mI (285360) SYNC: t1=285127216 t2=64406498 t3=64407407 t4=285127271  => delay≈-427 us, offset≈-220720291 us[0m
+[0;32mI (286360) SYNC: t1=286127216 t2=65406503 t3=65407412 t4=286127273  => delay≈-426 us, offset≈-220720287 us[0m
+[0;32mI (287360) SYNC: t1=287127216 t2=66406507 t3=66407417 t4=287127271  => delay≈-427 us, offset≈-220720281 us[0m
+[0;32mI (288360) SYNC: t1=288127216 t2=67406512 t3=67407422 t4=288127273  => delay≈-426 us, offset≈-220720277 us[0m
+[0;32mI (289360) SYNC: t1=289127216 t2=68406517 t3=68407427 t4=289127271  => delay≈-427 us, offset≈-220720271 us[0m
+[0;32mI (290360) SYNC: t1=290127216 t2=69406522 t3=69407432 t4=290127273  => delay≈-426 us, offset≈-220720267 us[0m
+[0;32mI (291360) SYNC: t1=291127216 t2=70406527 t3=70407436 t4=291127271  => delay≈-427 us, offset≈-220720262 us[0m
+[0;32mI (292360) SYNC: t1=292127216 t2=71406532 t3=71407441 t4=292127273  => delay≈-426 us, offset≈-220720258 us[0m
+[0;32mI (293360) SYNC: t1=293127216 t2=72406536 t3=72407446 t4=293127271  => delay≈-427 us, offset≈-220720252 us[0m
+[0;32mI (294360) SYNC: t1=294127216 t2=73406541 t3=73407451 t4=294127273  => delay≈-426 us, offset≈-220720248 us[0m
+[0;32mI (295360) SYNC: t1=295127216 t2=74406546 t3=74407456 t4=295127271  => delay≈-427 us, offset≈-220720242 us[0m
+[0;32mI (296360) SYNC: t1=296127216 t2=75406551 t3=75407461 t4=296127273  => delay≈-426 us, offset≈-220720238 us[0m
+[0;32mI (297360) SYNC: t1=297127216 t2=76406556 t3=76407465 t4=297127271  => delay≈-427 us, offset≈-220720233 us[0m
+[0;32mI (298360) SYNC: t1=298127216 t2=77406561 t3=77407470 t4=298127273  => delay≈-426 us, offset≈-220720229 us[0m
+[0;32mI (299360) SYNC: t1=299127216 t2=78406565 t3=78407475 t4=299127271  => delay≈-427 us, offset≈-220720223 us[0m
+[0;32mI (300360) SYNC: t1=300127216 t2=79406570 t3=79407480 t4=300127273  => delay≈-426 us, offset≈-220720219 us[0m
+[0;32mI (301360) SYNC: t1=301127216 t2=80406575 t3=80407485 t4=301127271  => delay≈-427 us, offset≈-220720213 us[0m
+[0;32mI (302360) SYNC: t1=302127216 t2=81406580 t3=81407490 t4=302127273  => delay≈-426 us, offset≈-220720209 us[0m
+[0;32mI (303360) SYNC: t1=303127216 t2=82406585 t3=82407494 t4=303127271  => delay≈-427 us, offset≈-220720204 us[0m
+[0;32mI (304360) SYNC: t1=304127216 t2=83406590 t3=83407499 t4=304127273  => delay≈-426 us, offset≈-220720200 us[0m
+[0;32mI (305360) SYNC: t1=305127216 t2=84406594 t3=84407504 t4=305127271  => delay≈-427 us, offset≈-220720194 us[0m
+[0;32mI (306360) SYNC: t1=306127216 t2=85406599 t3=85407509 t4=306127273  => delay≈-426 us, offset≈-220720190 us[0m
+[0;32mI (307360) SYNC: t1=307127216 t2=86406604 t3=86407514 t4=307127271  => delay≈-427 us, offset≈-220720184 us[0m
+[0;32mI (308360) SYNC: t1=308127216 t2=87406609 t3=87407519 t4=308127273  => delay≈-426 us, offset≈-220720180 us[0m
+[0;32mI (309360) SYNC: t1=309127216 t2=88406614 t3=88407523 t4=309127271  => delay≈-427 us, offset≈-220720175 us[0m
+[0;32mI (310360) SYNC: t1=310127216 t2=89406619 t3=89407528 t4=310127273  => delay≈-426 us, offset≈-220720171 us[0m
+[0;32mI (311360) SYNC: t1=311127216 t2=90406623 t3=90407533 t4=311127271  => delay≈-427 us, offset≈-220720165 us[0m
+[0;32mI (312360) SYNC: t1=312127216 t2=91406628 t3=91407538 t4=312127273  => delay≈-426 us, offset≈-220720161 us[0m
+[0;32mI (313360) SYNC: t1=313127216 t2=92406633 t3=92407543 t4=313127271  => delay≈-427 us, offset≈-220720155 us[0m
+[0;32mI (314360) SYNC: t1=314127216 t2=93406638 t3=93407548 t4=314127273  => delay≈-426 us, offset≈-220720151 us[0m
+[0;32mI (315360) SYNC: t1=315127216 t2=94406643 t3=94407552 t4=315127271  => delay≈-427 us, offset≈-220720146 us[0m
+[0;32mI (316360) SYNC: t1=316127216 t2=95406648 t3=95407557 t4=316127273  => delay≈-426 us, offset≈-220720142 us[0m
+[0;32mI (317360) SYNC: t1=317127216 t2=96406652 t3=96407562 t4=317127271  => delay≈-427 us, offset≈-220720136 us[0m
+[0;32mI (318360) SYNC: t1=318127216 t2=97406657 t3=97407567 t4=318127273  => delay≈-426 us, offset≈-220720132 us[0m
+[0;32mI (319360) SYNC: t1=319127216 t2=98406662 t3=98407572 t4=319127271  => delay≈-427 us, offset≈-220720126 us[0m
+[0;32mI (320360) SYNC: t1=320127216 t2=99406667 t3=99407577 t4=320127273  => delay≈-426 us, offset≈-220720122 us[0m
+[0;32mI (321360) SYNC: t1=321127216 t2=100406672 t3=100407581 t4=321127271  => delay≈-427 us, offset≈-220720117 us[0m
+[0;32mI (322360) SYNC: t1=322127216 t2=101406677 t3=101407586 t4=322127273  => delay≈-426 us, offset≈-220720113 us[0m
+[0;32mI (323360) SYNC: t1=323127216 t2=102406681 t3=102407591 t4=323127271  => delay≈-427 us, offset≈-220720107 us[0m
+[0;32mI (324360) SYNC: t1=324127216 t2=103406686 t3=103407596 t4=324127273  => delay≈-426 us, offset≈-220720103 us[0m
+[0;32mI (325360) SYNC: t1=325127216 t2=104406691 t3=104407601 t4=325127271  => delay≈-427 us, offset≈-220720097 us[0m
+[0;32mI (326360) SYNC: t1=326127216 t2=105406696 t3=105407606 t4=326127273  => delay≈-426 us, offset≈-220720093 us[0m
+[0;32mI (327360) SYNC: t1=327127216 t2=106406701 t3=106407611 t4=327127271  => delay≈-427 us, offset≈-220720087 us[0m
+[0;32mI (328360) SYNC: t1=328127216 t2=107406706 t3=107407615 t4=328127273  => delay≈-426 us, offset≈-220720084 us[0m
+[0;32mI (329360) SYNC: t1=329127216 t2=108406711 t3=108407620 t4=329127271  => delay≈-427 us, offset≈-220720078 us[0m
+[0;32mI (330360) SYNC: t1=330127216 t2=109406715 t3=109407625 t4=330127273  => delay≈-426 us, offset≈-220720074 us[0m
+[0;32mI (331360) SYNC: t1=331127216 t2=110406720 t3=110407630 t4=331127271  => delay≈-427 us, offset≈-220720068 us[0m
+[0;32mI (332360) SYNC: t1=332127216 t2=111406725 t3=111407635 t4=332127273  => delay≈-426 us, offset≈-220720064 us[0m
+[0;32mI (333360) SYNC: t1=333127216 t2=112406730 t3=112407640 t4=333127271  => delay≈-427 us, offset≈-220720058 us[0m
+[0;32mI (334360) SYNC: t1=334127216 t2=113406735 t3=113407644 t4=334127273  => delay≈-426 us, offset≈-220720055 us[0m
+[0;32mI (335360) SYNC: t1=335127216 t2=114406739 t3=114407649 t4=335127271  => delay≈-427 us, offset≈-220720049 us[0m
+[0;32mI (336360) SYNC: t1=336127216 t2=115406744 t3=115407654 t4=336127273  => delay≈-426 us, offset≈-220720045 us[0m
+[0;32mI (337360) SYNC: t1=337127216 t2=116406749 t3=116407659 t4=337127271  => delay≈-427 us, offset≈-220720039 us[0m
+[0;32mI (338360) SYNC: t1=338127216 t2=117406754 t3=117407664 t4=338127273  => delay≈-426 us, offset≈-220720035 us[0m
+[0;32mI (339360) SYNC: t1=339127216 t2=118406759 t3=118407669 t4=339127271  => delay≈-427 us, offset≈-220720029 us[0m
+[0;32mI (340360) SYNC: t1=340127216 t2=119406764 t3=119407673 t4=340127273  => delay≈-426 us, offset≈-220720026 us[0m
+[0;32mI (341360) SYNC: t1=341127216 t2=120406769 t3=120407678 t4=341127271  => delay≈-427 us, offset≈-220720020 us[0m
+[0;32mI (342360) SYNC: t1=342127216 t2=121406773 t3=121407683 t4=342127273  => delay≈-426 us, offset≈-220720016 us[0m
+[0;32mI (343360) SYNC: t1=343127216 t2=122406778 t3=122407688 t4=343127271  => delay≈-427 us, offset≈-220720010 us[0m
+[0;32mI (344360) SYNC: t1=344127216 t2=123406783 t3=123407693 t4=344127273  => delay≈-426 us, offset≈-220720006 us[0m
+[0;32mI (345360) SYNC: t1=345127216 t2=124406788 t3=124407698 t4=345127271  => delay≈-427 us, offset≈-220720000 us[0m
+[0;32mI (346360) SYNC: t1=346127216 t2=125406793 t3=125407702 t4=346127273  => delay≈-426 us, offset≈-220719997 us[0m
+[0;32mI (347360) SYNC: t1=347127216 t2=126406797 t3=126407707 t4=347127271  => delay≈-427 us, offset≈-220719991 us[0m
+[0;32mI (348360) SYNC: t1=348127216 t2=127406802 t3=127407712 t4=348127273  => delay≈-426 us, offset≈-220719987 us[0m
+[0;32mI (349360) SYNC: t1=349127216 t2=128406807 t3=128407717 t4=349127271  => delay≈-427 us, offset≈-220719981 us[0m
+[0;32mI (350360) SYNC: t1=350127216 t2=129406812 t3=129407722 t4=350127273  => delay≈-426 us, offset≈-220719977 us[0m
+[0;32mI (351360) SYNC: t1=351127216 t2=130406817 t3=130407727 t4=351127271  => delay≈-427 us, offset≈-220719971 us[0m
+[0;32mI (352360) SYNC: t1=352127216 t2=131406822 t3=131407731 t4=352127273  => delay≈-426 us, offset≈-220719968 us[0m
+[0;32mI (353360) SYNC: t1=353127216 t2=132406827 t3=132407736 t4=353127271  => delay≈-427 us, offset≈-220719962 us[0m
+[0;32mI (354360) SYNC: t1=354127216 t2=133406831 t3=133407741 t4=354127273  => delay≈-426 us, offset≈-220719958 us[0m
+[0;32mI (355360) SYNC: t1=355127216 t2=134406836 t3=134407746 t4=355127271  => delay≈-427 us, offset≈-220719952 us[0m
+[0;32mI (356360) SYNC: t1=356127216 t2=135406841 t3=135407751 t4=356127273  => delay≈-426 us, offset≈-220719948 us[0m
+[0;32mI (357360) SYNC: t1=357127216 t2=136406846 t3=136407756 t4=357127271  => delay≈-427 us, offset≈-220719942 us[0m
+[0;32mI (358360) SYNC: t1=358127216 t2=137406851 t3=137407760 t4=358127273  => delay≈-426 us, offset≈-220719939 us[0m
+[0;32mI (359360) SYNC: t1=359127216 t2=138406855 t3=138407765 t4=359127271  => delay≈-427 us, offset≈-220719933 us[0m
+[0;32mI (360360) SYNC: t1=360127216 t2=139406860 t3=139407770 t4=360127273  => delay≈-426 us, offset≈-220719929 us[0m
+[0;32mI (361360) SYNC: t1=361127216 t2=140406865 t3=140407775 t4=361127271  => delay≈-427 us, offset≈-220719923 us[0m
+[0;32mI (362360) SYNC: t1=362127216 t2=141406870 t3=141407780 t4=362127273  => delay≈-426 us, offset≈-220719919 us[0m
+[0;32mI (363360) SYNC: t1=363127216 t2=142406875 t3=142407785 t4=363127271  => delay≈-427 us, offset≈-220719913 us[0m
+[0;32mI (364360) SYNC: t1=364127216 t2=143406880 t3=143407790 t4=364127273  => delay≈-426 us, offset≈-220719909 us[0m
+[0;32mI (365360) SYNC: t1=365127216 t2=144406885 t3=144407794 t4=365127271  => delay≈-427 us, offset≈-220719904 us[0m
+[0;32mI (366360) SYNC: t1=366127216 t2=145406890 t3=145407799 t4=366127273  => delay≈-426 us, offset≈-220719900 us[0m
+[0;32mI (367360) SYNC: t1=367127216 t2=146406894 t3=146407804 t4=367127271  => delay≈-427 us, offset≈-220719894 us[0m
+[0;32mI (368360) SYNC: t1=368127216 t2=147406899 t3=147407809 t4=368127273  => delay≈-426 us, offset≈-220719890 us[0m
+[0;32mI (369360) SYNC: t1=369127216 t2=148406904 t3=148407814 t4=369127271  => delay≈-427 us, offset≈-220719884 us[0m
+[0;32mI (370360) SYNC: t1=370127216 t2=149406909 t3=149407819 t4=370127273  => delay≈-426 us, offset≈-220719880 us[0m
+[0;32mI (371360) SYNC: t1=371127216 t2=150406914 t3=150407823 t4=371127271  => delay≈-427 us, offset≈-220719875 us[0m
+[0;32mI (372360) SYNC: t1=372127216 t2=151406919 t3=151407828 t4=372127273  => delay≈-426 us, offset≈-220719871 us[0m
+[0;32mI (373360) SYNC: t1=373127216 t2=152406923 t3=152407833 t4=373127271  => delay≈-427 us, offset≈-220719865 us[0m
+[0;32mI (374360) SYNC: t1=374127216 t2=153406928 t3=153407838 t4=374127273  => delay≈-426 us, offset≈-220719861 us[0m
+[0;32mI (375360) SYNC: t1=375127216 t2=154406933 t3=154407843 t4=375127271  => delay≈-427 us, offset≈-220719855 us[0m
+[0;32mI (376360) SYNC: t1=376127216 t2=155406938 t3=155407848 t4=376127273  => delay≈-426 us, offset≈-220719851 us[0m
+[0;32mI (377360) SYNC: t1=377127216 t2=156406943 t3=156407852 t4=377127271  => delay≈-427 us, offset≈-220719846 us[0m
+[0;32mI (378360) SYNC: t1=378127216 t2=157406948 t3=157407857 t4=378127273  => delay≈-426 us, offset≈-220719842 us[0m
+[0;32mI (379360) SYNC: t1=379127216 t2=158406952 t3=158407862 t4=379127271  => delay≈-427 us, offset≈-220719836 us[0m
+[0;32mI (380360) SYNC: t1=380127216 t2=159406957 t3=159407867 t4=380127273  => delay≈-426 us, offset≈-220719832 us[0m
+[0;32mI (381360) SYNC: t1=381127216 t2=160406962 t3=160407872 t4=381127271  => delay≈-427 us, offset≈-220719826 us[0m
+[0;32mI (382360) SYNC: t1=382127216 t2=161406967 t3=161407877 t4=382127273  => delay≈-426 us, offset≈-220719822 us[0m
+[0;32mI (383360) SYNC: t1=383127216 t2=162406972 t3=162407881 t4=383127271  => delay≈-427 us, offset≈-220719817 us[0m
+[0;32mI (384360) SYNC: t1=384127216 t2=163406977 t3=163407886 t4=384127273  => delay≈-426 us, offset≈-220719813 us[0m
+[0;32mI (385360) SYNC: t1=385127216 t2=164406981 t3=164407891 t4=385127271  => delay≈-427 us, offset≈-220719807 us[0m
+[0;32mI (386360) SYNC: t1=386127216 t2=165406986 t3=165407896 t4=386127273  => delay≈-426 us, offset≈-220719803 us[0m
+[0;32mI (387360) SYNC: t1=387127216 t2=166406991 t3=166407901 t4=387127271  => delay≈-427 us, offset≈-220719797 us[0m
+[0;32mI (388360) SYNC: t1=388127216 t2=167406996 t3=167407906 t4=388127273  => delay≈-426 us, offset≈-220719793 us[0m
+[0;32mI (389360) SYNC: t1=389127216 t2=168407001 t3=168407910 t4=389127271  => delay≈-427 us, offset≈-220719788 us[0m
+[0;32mI (390360) SYNC: t1=390127216 t2=169407006 t3=169407915 t4=390127273  => delay≈-426 us, offset≈-220719784 us[0m
+[0;32mI (391360) SYNC: t1=391127216 t2=170407010 t3=170407920 t4=391127271  => delay≈-427 us, offset≈-220719778 us[0m
+[0;32mI (392360) SYNC: t1=392127216 t2=171407015 t3=171407925 t4=392127273  => delay≈-426 us, offset≈-220719774 us[0m
+[0;32mI (393360) SYNC: t1=393127216 t2=172407020 t3=172407930 t4=393127271  => delay≈-427 us, offset≈-220719768 us[0m
+[0;32mI (394360) SYNC: t1=394127216 t2=173407025 t3=173407935 t4=394127273  => delay≈-426 us, offset≈-220719764 us[0m
+[0;32mI (395360) SYNC: t1=395127216 t2=174407030 t3=174407939 t4=395127271  => delay≈-427 us, offset≈-220719759 us[0m
+[0;32mI (396360) SYNC: t1=396127216 t2=175407035 t3=175407944 t4=396127273  => delay≈-426 us, offset≈-220719755 us[0m
+[0;32mI (397360) SYNC: t1=397127216 t2=176407039 t3=176407949 t4=397127271  => delay≈-427 us, offset≈-220719749 us[0m
+[0;32mI (398360) SYNC: t1=398127216 t2=177407044 t3=177407954 t4=398127273  => delay≈-426 us, offset≈-220719745 us[0m
+[0;32mI (399360) SYNC: t1=399127216 t2=178407049 t3=178407959 t4=399127271  => delay≈-427 us, offset≈-220719739 us[0m
+[0;32mI (400360) SYNC: t1=400127216 t2=179407054 t3=179407964 t4=400127273  => delay≈-426 us, offset≈-220719735 us[0m
+[0;32mI (401360) SYNC: t1=401127216 t2=180407059 t3=180407968 t4=401127271  => delay≈-427 us, offset≈-220719730 us[0m
+[0;32mI (402360) SYNC: t1=402127216 t2=181407063 t3=181407973 t4=402127273  => delay≈-426 us, offset≈-220719726 us[0m
+[0;32mI (403360) SYNC: t1=403127216 t2=182407068 t3=182407978 t4=403127271  => delay≈-427 us, offset≈-220719720 us[0m
+[0;32mI (404360) SYNC: t1=404127216 t2=183407073 t3=183407983 t4=404127273  => delay≈-426 us, offset≈-220719716 us[0m
+[0;32mI (405360) SYNC: t1=405127216 t2=184407078 t3=184407988 t4=405127271  => delay≈-427 us, offset≈-220719710 us[0m
+[0;32mI (406360) SYNC: t1=406127216 t2=185407083 t3=185407992 t4=406127278  => delay≈-423 us, offset≈-220719709 us[0m
+[0;32mI (407360) SYNC: t1=407127216 t2=186407087 t3=186407997 t4=407127271  => delay≈-427 us, offset≈-220719701 us[0m
+[0;32mI (408360) SYNC: t1=408127216 t2=187407092 t3=187408002 t4=408127273  => delay≈-426 us, offset≈-220719697 us[0m
+[0;32mI (409360) SYNC: t1=409127216 t2=188407097 t3=188408007 t4=409127271  => delay≈-427 us, offset≈-220719691 us[0m
+[0;32mI (410360) SYNC: t1=410127216 t2=189407102 t3=189408012 t4=410127273  => delay≈-426 us, offset≈-220719687 us[0m
+[0;32mI (411360) SYNC: t1=411127216 t2=190407107 t3=190408017 t4=411127271  => delay≈-427 us, offset≈-220719681 us[0m
+[0;32mI (412360) SYNC: t1=412127216 t2=191407112 t3=191408021 t4=412127273  => delay≈-426 us, offset≈-220719678 us[0m
+[0;32mI (413360) SYNC: t1=413127216 t2=192407116 t3=192408026 t4=413127271  => delay≈-427 us, offset≈-220719672 us[0m
+[0;32mI (414360) SYNC: t1=414127216 t2=193407121 t3=193408031 t4=414127273  => delay≈-426 us, offset≈-220719668 us[0m
+[0;32mI (415360) SYNC: t1=415127216 t2=194407126 t3=194408036 t4=415127271  => delay≈-427 us, offset≈-220719662 us[0m
+[0;32mI (416360) SYNC: t1=416127216 t2=195407131 t3=195408041 t4=416127273  => delay≈-426 us, offset≈-220719658 us[0m
+[0;32mI (417360) SYNC: t1=417127216 t2=196407136 t3=196408045 t4=417127271  => delay≈-427 us, offset≈-220719653 us[0m
+[0;32mI (418360) SYNC: t1=418127216 t2=197407141 t3=197408050 t4=418127273  => delay≈-426 us, offset≈-220719649 us[0m
+[0;32mI (419360) SYNC: t1=419127216 t2=198407145 t3=198408055 t4=419127271  => delay≈-427 us, offset≈-220719643 us[0m
+[0;32mI (420360) SYNC: t1=420127216 t2=199407150 t3=199408060 t4=420127273  => delay≈-426 us, offset≈-220719639 us[0m
+[0;32mI (421360) SYNC: t1=421127216 t2=200407155 t3=200408065 t4=421127271  => delay≈-427 us, offset≈-220719633 us[0m
+[0;32mI (422360) SYNC: t1=422127216 t2=201407160 t3=201408069 t4=422127273  => delay≈-426 us, offset≈-220719630 us[0m
+[0;32mI (423360) SYNC: t1=423127216 t2=202407164 t3=202408074 t4=423127271  => delay≈-427 us, offset≈-220719624 us[0m
+[0;32mI (424360) SYNC: t1=424127216 t2=203407169 t3=203408079 t4=424127273  => delay≈-426 us, offset≈-220719620 us[0m
+[0;32mI (425360) SYNC: t1=425127216 t2=204407174 t3=204408084 t4=425127271  => delay≈-427 us, offset≈-220719614 us[0m
+[0;32mI (426360) SYNC: t1=426127216 t2=205407179 t3=205408089 t4=426127273  => delay≈-426 us, offset≈-220719610 us[0m
+[0;32mI (427360) SYNC: t1=427127216 t2=206407184 t3=206408094 t4=427127271  => delay≈-427 us, offset≈-220719604 us[0m
+[0;32mI (428360) SYNC: t1=428127216 t2=207407189 t3=207408098 t4=428127273  => delay≈-426 us, offset≈-220719601 us[0m
+[0;32mI (429360) SYNC: t1=429127216 t2=208407193 t3=208408103 t4=429127271  => delay≈-427 us, offset≈-220719595 us[0m
+[0;32mI (430360) SYNC: t1=430127216 t2=209407198 t3=209408108 t4=430127273  => delay≈-426 us, offset≈-220719591 us[0m
+[0;32mI (431360) SYNC: t1=431127216 t2=210407203 t3=210408113 t4=431127271  => delay≈-427 us, offset≈-220719585 us[0m
+[0;32mI (432360) SYNC: t1=432127216 t2=211407208 t3=211408118 t4=432127273  => delay≈-426 us, offset≈-220719581 us[0m
+[0;32mI (433360) SYNC: t1=433127216 t2=212407213 t3=212408122 t4=433127271  => delay≈-427 us, offset≈-220719576 us[0m
+[0;32mI (434360) SYNC: t1=434127216 t2=213407218 t3=213408127 t4=434127273  => delay≈-426 us, offset≈-220719572 us[0m
+[0;32mI (435360) SYNC: t1=435127216 t2=214407223 t3=214408132 t4=435127271  => delay≈-427 us, offset≈-220719566 us[0m
+[0;32mI (436360) SYNC: t1=436127216 t2=215407228 t3=215408137 t4=436127273  => delay≈-426 us, offset≈-220719562 us[0m
+[0;32mI (437360) SYNC: t1=437127216 t2=216407232 t3=216408142 t4=437127271  => delay≈-427 us, offset≈-220719556 us[0m
+[0;32mI (438360) SYNC: t1=438127216 t2=217407237 t3=217408147 t4=438127273  => delay≈-426 us, offset≈-220719552 us[0m
+[0;32mI (439360) SYNC: t1=439127216 t2=218407242 t3=218408151 t4=439127271  => delay≈-427 us, offset≈-220719547 us[0m
+[0;32mI (440360) SYNC: t1=440127216 t2=219407246 t3=219408156 t4=440127273  => delay≈-426 us, offset≈-220719543 us[0m
+[0;32mI (441360) SYNC: t1=441127216 t2=220407251 t3=220408161 t4=441127271  => delay≈-427 us, offset≈-220719537 us[0m
+[0;32mI (442360) SYNC: t1=442127216 t2=221407264 t3=221408166 t4=442127273  => delay≈-422 us, offset≈-220719529 us[0m
+[0;32mI (443360) SYNC: t1=443127216 t2=222407260 t3=222408171 t4=443127271  => delay≈-428 us, offset≈-220719528 us[0m
+[0;32mI (444360) SYNC: t1=444127216 t2=223407265 t3=223408175 t4=444127273  => delay≈-426 us, offset≈-220719524 us[0m
+[0;32mI (445360) SYNC: t1=445127216 t2=224407270 t3=224408180 t4=445127271  => delay≈-427 us, offset≈-220719518 us[0m
+[0;32mI (446360) SYNC: t1=446127216 t2=225407274 t3=225408185 t4=446127273  => delay≈-427 us, offset≈-220719515 us[0m
+[0;32mI (447360) SYNC: t1=447127216 t2=226407279 t3=226408190 t4=447127271  => delay≈-428 us, offset≈-220719509 us[0m
+[0;32mI (448360) SYNC: t1=448127216 t2=227407284 t3=227408195 t4=448127273  => delay≈-427 us, offset≈-220719505 us[0m
+[0;32mI (449360) SYNC: t1=449127216 t2=228407289 t3=228408199 t4=449127271  => delay≈-427 us, offset≈-220719499 us[0m
+[0;32mI (450360) SYNC: t1=450127216 t2=229407294 t3=229408204 t4=450127273  => delay≈-426 us, offset≈-220719495 us[0m
+[0;32mI (451360) SYNC: t1=451127216 t2=230407299 t3=230408209 t4=451127271  => delay≈-427 us, offset≈-220719489 us[0m
+[0;32mI (452360) SYNC: t1=452127216 t2=231407303 t3=231408214 t4=452127273  => delay≈-427 us, offset≈-220719486 us[0m
+[0;32mI (453360) SYNC: t1=453127216 t2=232407309 t3=232408219 t4=453127271  => delay≈-427 us, offset≈-220719479 us[0m
+[0;32mI (454360) SYNC: t1=454127216 t2=233407314 t3=233408270 t4=454127273  => delay≈-449 us, offset≈-220719452 us[0m
+[0;32mI (455360) SYNC: t1=455127216 t2=234407319 t3=234408275 t4=455127271  => delay≈-450 us, offset≈-220719446 us[0m
+[0;32mI (456360) SYNC: t1=456127216 t2=235407324 t3=235408280 t4=456127273  => delay≈-449 us, offset≈-220719442 us[0m
+[0;32mI (457360) SYNC: t1=457127216 t2=236407329 t3=236408284 t4=457127271  => delay≈-450 us, offset≈-220719437 us[0m
+[0;32mI (458360) SYNC: t1=458127216 t2=237407334 t3=237408289 t4=458127273  => delay≈-449 us, offset≈-220719433 us[0m
+[0;32mI (459360) SYNC: t1=459127216 t2=238407338 t3=238408294 t4=459127271  => delay≈-450 us, offset≈-220719427 us[0m
+[0;32mI (460360) SYNC: t1=460127216 t2=239407343 t3=239408293 t4=460127273  => delay≈-446 us, offset≈-220719426 us[0m
+[0;32mI (461360) SYNC: t1=461127216 t2=240407348 t3=240408298 t4=461127271  => delay≈-447 us, offset≈-220719420 us[0m
+[0;32mI (462360) SYNC: t1=462127216 t2=241407353 t3=241408302 t4=462127273  => delay≈-446 us, offset≈-220719417 us[0m
+[0;32mI (463360) SYNC: t1=463127216 t2=242407358 t3=242408307 t4=463127271  => delay≈-447 us, offset≈-220719411 us[0m
+[0;32mI (464360) SYNC: t1=464127216 t2=243407363 t3=243408309 t4=464127273  => delay≈-444 us, offset≈-220719408 us[0m
+[0;32mI (465360) SYNC: t1=465127216 t2=244407367 t3=244408309 t4=465127271  => delay≈-443 us, offset≈-220719405 us[0m
+[0;32mI (466360) SYNC: t1=466127216 t2=245407371 t3=245408310 t4=466127273  => delay≈-441 us, offset≈-220719404 us[0m
+[0;32mI (467360) SYNC: t1=467127216 t2=246407391 t3=246408307 t4=467127271  => delay≈-430 us, offset≈-220719394 us[0m
+[0;32mI (468360) SYNC: t1=468127216 t2=247407398 t3=247408309 t4=468127273  => delay≈-427 us, offset≈-220719391 us[0m
+[0;32mI (469360) SYNC: t1=469127216 t2=248407387 t3=248408310 t4=469127271  => delay≈-434 us, offset≈-220719395 us[0m
+[0;32mI (470360) SYNC: t1=470127216 t2=249407391 t3=249408307 t4=470127273  => delay≈-429 us, offset≈-220719395 us[0m
+[0;32mI (471360) SYNC: t1=471127216 t2=250407396 t3=250408307 t4=471127271  => delay≈-428 us, offset≈-220719392 us[0m
+[0;32mI (472360) SYNC: t1=472127216 t2=251407401 t3=251408314 t4=472127273  => delay≈-428 us, offset≈-220719387 us[0m
+[0;32mI (473360) SYNC: t1=473127216 t2=252407406 t3=252408316 t4=473127271  => delay≈-427 us, offset≈-220719382 us[0m
+[0;32mI (474360) SYNC: t1=474127216 t2=253407411 t3=253408320 t4=474127273  => delay≈-426 us, offset≈-220719379 us[0m
+[0;32mI (475360) SYNC: t1=475127216 t2=254407415 t3=254408325 t4=475127271  => delay≈-427 us, offset≈-220719373 us[0m
+[0;32mI (476360) SYNC: t1=476127216 t2=255407420 t3=255408329 t4=476127273  => delay≈-426 us, offset≈-220719370 us[0m
+[0;32mI (477360) SYNC: t1=477127216 t2=256407425 t3=256408334 t4=477127271  => delay≈-427 us, offset≈-220719364 us[0m
+[0;32mI (478360) SYNC: t1=478127216 t2=257407430 t3=257408339 t4=478127273  => delay≈-426 us, offset≈-220719360 us[0m
+[0;32mI (479360) SYNC: t1=479127216 t2=258407435 t3=258408344 t4=479127271  => delay≈-427 us, offset≈-220719354 us[0m
+[0;32mI (480360) SYNC: t1=480127216 t2=259407439 t3=259408349 t4=480127273  => delay≈-426 us, offset≈-220719350 us[0m
+[0;32mI (481360) SYNC: t1=481127216 t2=260407444 t3=260408354 t4=481127271  => delay≈-427 us, offset≈-220719344 us[0m
+[0;32mI (482360) SYNC: t1=482127216 t2=261407449 t3=261408358 t4=482127273  => delay≈-426 us, offset≈-220719341 us[0m
+[0;32mI (483360) SYNC: t1=483127216 t2=262407454 t3=262408363 t4=483127271  => delay≈-427 us, offset≈-220719335 us[0m
+[0;32mI (484360) SYNC: t1=484127216 t2=263407459 t3=263408368 t4=484127273  => delay≈-426 us, offset≈-220719331 us[0m
+[0;32mI (485360) SYNC: t1=485127216 t2=264407464 t3=264408373 t4=485127271  => delay≈-427 us, offset≈-220719325 us[0m
+[0;32mI (486360) SYNC: t1=486127216 t2=265407468 t3=265408378 t4=486127273  => delay≈-426 us, offset≈-220719321 us[0m
+[0;32mI (487360) SYNC: t1=487127216 t2=266407473 t3=266408382 t4=487127271  => delay≈-427 us, offset≈-220719316 us[0m
+[0;32mI (488360) SYNC: t1=488127216 t2=267407478 t3=267408387 t4=488127273  => delay≈-426 us, offset≈-220719312 us[0m
+[0;32mI (489360) SYNC: t1=489127216 t2=268407483 t3=268408392 t4=489127271  => delay≈-427 us, offset≈-220719306 us[0m
+[0;32mI (490360) SYNC: t1=490127216 t2=269407488 t3=269408397 t4=490127273  => delay≈-426 us, offset≈-220719302 us[0m
+[0;32mI (491360) SYNC: t1=491127216 t2=270407492 t3=270408402 t4=491127271  => delay≈-427 us, offset≈-220719296 us[0m
+[0;32mI (492360) SYNC: t1=492127216 t2=271407497 t3=271408406 t4=492127273  => delay≈-426 us, offset≈-220719293 us[0m
+[0;32mI (493360) SYNC: t1=493127216 t2=272407502 t3=272408411 t4=493127271  => delay≈-427 us, offset≈-220719287 us[0m
+[0;32mI (494360) SYNC: t1=494127216 t2=273407507 t3=273408416 t4=494127273  => delay≈-426 us, offset≈-220719283 us[0m
+[0;32mI (495360) SYNC: t1=495127216 t2=274407512 t3=274408421 t4=495127271  => delay≈-427 us, offset≈-220719277 us[0m
+[0;32mI (496360) SYNC: t1=496127216 t2=275407517 t3=275408426 t4=496127273  => delay≈-426 us, offset≈-220719273 us[0m
+[0;32mI (497360) SYNC: t1=497127216 t2=276407521 t3=276408431 t4=497127271  => delay≈-427 us, offset≈-220719267 us[0m
+[0;32mI (498360) SYNC: t1=498127216 t2=277407526 t3=277408435 t4=498127273  => delay≈-426 us, offset≈-220719264 us[0m
+[0;32mI (499360) SYNC: t1=499127216 t2=278407531 t3=278408440 t4=499127277  => delay≈-424 us, offset≈-220719261 us[0m
+[0;32mI (500360) SYNC: t1=500127216 t2=279407536 t3=279408445 t4=500127273  => delay≈-426 us, offset≈-220719254 us[0m
+[0;32mI (501360) SYNC: t1=501127216 t2=280407541 t3=280408450 t4=501127271  => delay≈-427 us, offset≈-220719248 us[0m
+[0;32mI (502360) SYNC: t1=502127216 t2=281407545 t3=281408455 t4=502127273  => delay≈-426 us, offset≈-220719244 us[0m
+[0;32mI (503360) SYNC: t1=503127216 t2=282407550 t3=282408459 t4=503127271  => delay≈-427 us, offset≈-220719239 us[0m
+[0;32mI (504360) SYNC: t1=504127216 t2=283407555 t3=283408464 t4=504127273  => delay≈-426 us, offset≈-220719235 us[0m
+[0;32mI (505360) SYNC: t1=505127216 t2=284407560 t3=284408469 t4=505127271  => delay≈-427 us, offset≈-220719229 us[0m
+[0;32mI (506360) SYNC: t1=506127216 t2=285407565 t3=285408474 t4=506127273  => delay≈-426 us, offset≈-220719225 us[0m
+[0;32mI (507360) SYNC: t1=507127216 t2=286407569 t3=286408479 t4=507127271  => delay≈-427 us, offset≈-220719219 us[0m
+[0;32mI (508360) SYNC: t1=508127216 t2=287407574 t3=287408483 t4=508127273  => delay≈-426 us, offset≈-220719216 us[0m
+[0;32mI (509360) SYNC: t1=509127216 t2=288407579 t3=288408488 t4=509127271  => delay≈-427 us, offset≈-220719210 us[0m
+[0;32mI (510360) SYNC: t1=510127216 t2=289407584 t3=289408493 t4=510127273  => delay≈-426 us, offset≈-220719206 us[0m
+[0;32mI (511360) SYNC: t1=511127216 t2=290407589 t3=290408498 t4=511127271  => delay≈-427 us, offset≈-220719200 us[0m
+[0;32mI (512360) SYNC: t1=512127216 t2=291407594 t3=291408503 t4=512127273  => delay≈-426 us, offset≈-220719196 us[0m
+[0;32mI (513360) SYNC: t1=513127216 t2=292407598 t3=292408508 t4=513127271  => delay≈-427 us, offset≈-220719190 us[0m
+[0;32mI (514360) SYNC: t1=514127216 t2=293407603 t3=293408512 t4=514127273  => delay≈-426 us, offset≈-220719187 us[0m
+[0;32mI (515360) SYNC: t1=515127216 t2=294407608 t3=294408523 t4=515127271  => delay≈-430 us, offset≈-220719178 us[0m
+[0;32mI (516360) SYNC: t1=516127216 t2=295407613 t3=295408522 t4=516127273  => delay≈-426 us, offset≈-220719177 us[0m
+[0;32mI (517360) SYNC: t1=517127216 t2=296407618 t3=296408527 t4=517127271  => delay≈-427 us, offset≈-220719171 us[0m
+[0;32mI (518360) SYNC: t1=518127216 t2=297407622 t3=297408532 t4=518127273  => delay≈-426 us, offset≈-220719167 us[0m
+[0;32mI (519360) SYNC: t1=519127216 t2=298407627 t3=298408536 t4=519127271  => delay≈-427 us, offset≈-220719162 us[0m
+[0;32mI (520360) SYNC: t1=520127216 t2=299407632 t3=299408541 t4=520127273  => delay≈-426 us, offset≈-220719158 us[0m
+[0;32mI (521360) SYNC: t1=521127216 t2=300407637 t3=300408546 t4=521127271  => delay≈-427 us, offset≈-220719152 us[0m
+[0;32mI (522360) SYNC: t1=522127216 t2=301407642 t3=301408551 t4=522127273  => delay≈-426 us, offset≈-220719148 us[0m
+[0;32mI (523360) SYNC: t1=523127216 t2=302407646 t3=302408556 t4=523127271  => delay≈-427 us, offset≈-220719142 us[0m
+[0;32mI (524360) SYNC: t1=524127216 t2=303407651 t3=303408560 t4=524127273  => delay≈-426 us, offset≈-220719139 us[0m
+[0;32mI (525360) SYNC: t1=525127216 t2=304407656 t3=304408565 t4=525127271  => delay≈-427 us, offset≈-220719133 us[0m
+[0;32mI (526360) SYNC: t1=526127216 t2=305407661 t3=305408570 t4=526127273  => delay≈-426 us, offset≈-220719129 us[0m
+[0;32mI (527360) SYNC: t1=527127216 t2=306407666 t3=306408575 t4=527127271  => delay≈-427 us, offset≈-220719123 us[0m
+[0;32mI (528360) SYNC: t1=528127216 t2=307407671 t3=307408580 t4=528127273  => delay≈-426 us, offset≈-220719119 us[0m
+[0;32mI (529360) SYNC: t1=529127216 t2=308407675 t3=308408585 t4=529127271  => delay≈-427 us, offset≈-220719113 us[0m
+[0;32mI (530360) SYNC: t1=530127216 t2=309407680 t3=309408589 t4=530127273  => delay≈-426 us, offset≈-220719110 us[0m
+[0;32mI (531360) SYNC: t1=531127216 t2=310407685 t3=310408594 t4=531127271  => delay≈-427 us, offset≈-220719104 us[0m
+[0;32mI (532360) SYNC: t1=532127216 t2=311407690 t3=311408599 t4=532127273  => delay≈-426 us, offset≈-220719100 us[0m
+[0;32mI (533360) SYNC: t1=533127216 t2=312407695 t3=312408604 t4=533127271  => delay≈-427 us, offset≈-220719094 us[0m
+[0;32mI (534360) SYNC: t1=534127216 t2=313407699 t3=313408609 t4=534127273  => delay≈-426 us, offset≈-220719090 us[0m
+[0;32mI (535360) SYNC: t1=535127216 t2=314407704 t3=314408613 t4=535127271  => delay≈-427 us, offset≈-220719085 us[0m
+[0;32mI (536360) SYNC: t1=536127216 t2=315407709 t3=315408618 t4=536127273  => delay≈-426 us, offset≈-220719081 us[0m
+[0;32mI (537360) SYNC: t1=537127216 t2=316407714 t3=316408623 t4=537127271  => delay≈-427 us, offset≈-220719075 us[0m
+[0;32mI (538360) SYNC: t1=538127216 t2=317407719 t3=317408628 t4=538127273  => delay≈-426 us, offset≈-220719071 us[0m
+[0;32mI (539360) SYNC: t1=539127216 t2=318407723 t3=318408633 t4=539127271  => delay≈-427 us, offset≈-220719065 us[0m
+[0;32mI (540360) SYNC: t1=540127216 t2=319407728 t3=319408637 t4=540127273  => delay≈-426 us, offset≈-220719062 us[0m
+[0;32mI (541360) SYNC: t1=541127216 t2=320407733 t3=320408642 t4=541127271  => delay≈-427 us, offset≈-220719056 us[0m
+[0;32mI (542360) SYNC: t1=542127216 t2=321407738 t3=321408647 t4=542127273  => delay≈-426 us, offset≈-220719052 us[0m
+[0;32mI (543360) SYNC: t1=543127216 t2=322407743 t3=322408652 t4=543127271  => delay≈-427 us, offset≈-220719046 us[0m
+[0;32mI (544360) SYNC: t1=544127216 t2=323407748 t3=323408657 t4=544127273  => delay≈-426 us, offset≈-220719042 us[0m
+[0;32mI (545360) SYNC: t1=545127216 t2=324407752 t3=324408662 t4=545127271  => delay≈-427 us, offset≈-220719036 us[0m
+[0;32mI (546360) SYNC: t1=546127216 t2=325407757 t3=325408666 t4=546127273  => delay≈-426 us, offset≈-220719033 us[0m
+[0;32mI (547360) SYNC: t1=547127216 t2=326407762 t3=326408671 t4=547127271  => delay≈-427 us, offset≈-220719027 us[0m
+[0;32mI (548360) SYNC: t1=548127216 t2=327407767 t3=327408676 t4=548127273  => delay≈-426 us, offset≈-220719023 us[0m
+[0;32mI (549360) SYNC: t1=549127216 t2=328407772 t3=328408681 t4=549127271  => delay≈-427 us, offset≈-220719017 us[0m
+[0;32mI (550360) SYNC: t1=550127216 t2=329407776 t3=329408686 t4=550127273  => delay≈-426 us, offset≈-220719013 us[0m
+[0;32mI (551360) SYNC: t1=551127216 t2=330407781 t3=330408690 t4=551127271  => delay≈-427 us, offset≈-220719008 us[0m
+[0;32mI (552360) SYNC: t1=552127216 t2=331407786 t3=331408695 t4=552127273  => delay≈-426 us, offset≈-220719004 us[0m
+[0;32mI (553360) SYNC: t1=553127216 t2=332407791 t3=332408700 t4=553127271  => delay≈-427 us, offset≈-220718998 us[0m
+[0;32mI (554360) SYNC: t1=554127216 t2=333407796 t3=333408705 t4=554127273  => delay≈-426 us, offset≈-220718994 us[0m
+[0;32mI (555360) SYNC: t1=555127216 t2=334407800 t3=334408710 t4=555127271  => delay≈-427 us, offset≈-220718988 us[0m
+[0;32mI (556360) SYNC: t1=556127216 t2=335407805 t3=335408714 t4=556127273  => delay≈-426 us, offset≈-220718985 us[0m
+[0;32mI (557360) SYNC: t1=557127216 t2=336407810 t3=336408719 t4=557127271  => delay≈-427 us, offset≈-220718979 us[0m
+[0;32mI (558360) SYNC: t1=558127216 t2=337407815 t3=337408724 t4=558127273  => delay≈-426 us, offset≈-220718975 us[0m
+[0;32mI (559360) SYNC: t1=559127216 t2=338407820 t3=338408729 t4=559127271  => delay≈-427 us, offset≈-220718969 us[0m
+[0;32mI (560360) SYNC: t1=560127216 t2=339407825 t3=339408734 t4=560127273  => delay≈-426 us, offset≈-220718965 us[0m
+[0;32mI (561360) SYNC: t1=561127216 t2=340407829 t3=340408739 t4=561127271  => delay≈-427 us, offset≈-220718959 us[0m
+[0;32mI (562360) SYNC: t1=562127216 t2=341407834 t3=341408743 t4=562127273  => delay≈-426 us, offset≈-220718956 us[0m
+[0;32mI (563360) SYNC: t1=563127216 t2=342407839 t3=342408748 t4=563127271  => delay≈-427 us, offset≈-220718950 us[0m
+[0;32mI (564360) SYNC: t1=564127216 t2=343407844 t3=343408753 t4=564127273  => delay≈-426 us, offset≈-220718946 us[0m
+[0;32mI (565360) SYNC: t1=565127216 t2=344407849 t3=344408758 t4=565127271  => delay≈-427 us, offset≈-220718940 us[0m
+[0;32mI (566360) SYNC: t1=566127216 t2=345407853 t3=345408763 t4=566127273  => delay≈-426 us, offset≈-220718936 us[0m
+[0;32mI (567360) SYNC: t1=567127216 t2=346407858 t3=346408767 t4=567127271  => delay≈-427 us, offset≈-220718931 us[0m
+[0;32mI (568360) SYNC: t1=568127216 t2=347407863 t3=347408772 t4=568127273  => delay≈-426 us, offset≈-220718927 us[0m
+[0;32mI (569360) SYNC: t1=569127216 t2=348407868 t3=348408777 t4=569127271  => delay≈-427 us, offset≈-220718921 us[0m
+[0;32mI (570360) SYNC: t1=570127216 t2=349407873 t3=349408782 t4=570127273  => delay≈-426 us, offset≈-220718917 us[0m
+[0;32mI (571360) SYNC: t1=571127216 t2=350407877 t3=350408787 t4=571127271  => delay≈-427 us, offset≈-220718911 us[0m
+[0;32mI (572360) SYNC: t1=572127216 t2=351407882 t3=351408792 t4=572127273  => delay≈-426 us, offset≈-220718907 us[0m
+[0;32mI (573360) SYNC: t1=573127216 t2=352407887 t3=352408796 t4=573127271  => delay≈-427 us, offset≈-220718902 us[0m
+[0;32mI (574360) SYNC: t1=574127216 t2=353407892 t3=353408801 t4=574127273  => delay≈-426 us, offset≈-220718898 us[0m
+[0;32mI (575360) SYNC: t1=575127216 t2=354407897 t3=354408806 t4=575127271  => delay≈-427 us, offset≈-220718892 us[0m
+[0;32mI (576360) SYNC: t1=576127216 t2=355407902 t3=355408811 t4=576127273  => delay≈-426 us, offset≈-220718888 us[0m
+[0;32mI (577360) SYNC: t1=577127216 t2=356407906 t3=356408816 t4=577127271  => delay≈-427 us, offset≈-220718882 us[0m
+[0;32mI (578360) SYNC: t1=578127216 t2=357407911 t3=357408820 t4=578127273  => delay≈-426 us, offset≈-220718879 us[0m
+[0;32mI (579360) SYNC: t1=579127216 t2=358407916 t3=358408825 t4=579127271  => delay≈-427 us, offset≈-220718873 us[0m
+[0;32mI (580360) SYNC: t1=580127216 t2=359407921 t3=359408830 t4=580127273  => delay≈-426 us, offset≈-220718869 us[0m
+[0;32mI (581360) SYNC: t1=581127216 t2=360407926 t3=360408835 t4=581127271  => delay≈-427 us, offset≈-220718863 us[0m
+[0;32mI (582360) SYNC: t1=582127216 t2=361407930 t3=361408840 t4=582127273  => delay≈-426 us, offset≈-220718859 us[0m
+[0;32mI (583360) SYNC: t1=583127216 t2=362407935 t3=362408845 t4=583127271  => delay≈-427 us, offset≈-220718853 us[0m
+[0;32mI (584360) SYNC: t1=584127216 t2=363407940 t3=363408849 t4=584127273  => delay≈-426 us, offset≈-220718850 us[0m
+[0;32mI (585360) SYNC: t1=585127216 t2=364407945 t3=364408854 t4=585127271  => delay≈-427 us, offset≈-220718844 us[0m
+[0;32mI (586360) SYNC: t1=586127216 t2=365407950 t3=365408859 t4=586127273  => delay≈-426 us, offset≈-220718840 us[0m
+[0;32mI (587360) SYNC: t1=587127216 t2=366407955 t3=366408864 t4=587127271  => delay≈-427 us, offset≈-220718834 us[0m
+[0;32mI (588360) SYNC: t1=588127216 t2=367407959 t3=367408869 t4=588127273  => delay≈-426 us, offset≈-220718830 us[0m
+[0;32mI (589360) SYNC: t1=589127216 t2=368407964 t3=368408873 t4=589127271  => delay≈-427 us, offset≈-220718825 us[0m
+[0;32mI (590360) SYNC: t1=590127216 t2=369407969 t3=369408878 t4=590127273  => delay≈-426 us, offset≈-220718821 us[0m
+[0;32mI (591360) SYNC: t1=591127216 t2=370407974 t3=370408883 t4=591127271  => delay≈-427 us, offset≈-220718815 us[0m
+[0;32mI (592360) SYNC: t1=592127216 t2=371407979 t3=371408888 t4=592127273  => delay≈-426 us, offset≈-220718811 us[0m
+[0;32mI (593360) SYNC: t1=593127216 t2=372407983 t3=372408893 t4=593127271  => delay≈-427 us, offset≈-220718805 us[0m
+[0;32mI (594360) SYNC: t1=594127216 t2=373407988 t3=373408897 t4=594127273  => delay≈-426 us, offset≈-220718802 us[0m
+[0;32mI (595360) SYNC: t1=595127216 t2=374407993 t3=374408902 t4=595127271  => delay≈-427 us, offset≈-220718796 us[0m
+[0;32mI (596360) SYNC: t1=596127216 t2=375407998 t3=375408907 t4=596127273  => delay≈-426 us, offset≈-220718792 us[0m
+[0;32mI (597360) SYNC: t1=597127216 t2=376408003 t3=376408912 t4=597127271  => delay≈-427 us, offset≈-220718786 us[0m
+[0;32mI (598360) SYNC: t1=598127216 t2=377408007 t3=377408917 t4=598127273  => delay≈-426 us, offset≈-220718782 us[0m
+[0;32mI (599360) SYNC: t1=599127216 t2=378408012 t3=378408922 t4=599127271  => delay≈-427 us, offset≈-220718776 us[0m
+[0;32mI (600360) SYNC: t1=600127216 t2=379408017 t3=379408926 t4=600127273  => delay≈-426 us, offset≈-220718773 us[0m
+[0;32mI (601360) SYNC: t1=601127216 t2=380408022 t3=380408931 t4=601127271  => delay≈-427 us, offset≈-220718767 us[0m
+[0;32mI (602360) SYNC: t1=602127216 t2=381408027 t3=381408936 t4=602127273  => delay≈-426 us, offset≈-220718763 us[0m
+[0;32mI (603360) SYNC: t1=603127216 t2=382408032 t3=382408941 t4=603127271  => delay≈-427 us, offset≈-220718757 us[0m
+[0;32mI (604360) SYNC: t1=604127216 t2=383408036 t3=383408946 t4=604127273  => delay≈-426 us, offset≈-220718753 us[0m
+[0;32mI (605360) SYNC: t1=605127216 t2=384408041 t3=384408950 t4=605127271  => delay≈-427 us, offset≈-220718748 us[0m
+[0;32mI (606360) SYNC: t1=606127216 t2=385408046 t3=385408955 t4=606127273  => delay≈-426 us, offset≈-220718744 us[0m
+[0;32mI (607360) SYNC: t1=607127216 t2=386408051 t3=386408960 t4=607127271  => delay≈-427 us, offset≈-220718738 us[0m
+[0;32mI (608360) SYNC: t1=608127216 t2=387408056 t3=387408965 t4=608127273  => delay≈-426 us, offset≈-220718734 us[0m
+[0;32mI (609360) SYNC: t1=609127216 t2=388408060 t3=388408970 t4=609127271  => delay≈-427 us, offset≈-220718728 us[0m
+[0;32mI (610360) SYNC: t1=610127216 t2=389408065 t3=389408974 t4=610127273  => delay≈-426 us, offset≈-220718725 us[0m
+[0;32mI (611360) SYNC: t1=611127216 t2=390408070 t3=390408979 t4=611127271  => delay≈-427 us, offset≈-220718719 us[0m
+[0;32mI (612360) SYNC: t1=612127216 t2=391408075 t3=391408984 t4=612127273  => delay≈-426 us, offset≈-220718715 us[0m
+[0;32mI (613360) SYNC: t1=613127216 t2=392408080 t3=392408989 t4=613127271  => delay≈-427 us, offset≈-220718709 us[0m
+[0;32mI (614360) SYNC: t1=614127216 t2=393408084 t3=393408994 t4=614127273  => delay≈-426 us, offset≈-220718705 us[0m
+[0;32mI (615360) SYNC: t1=615127216 t2=394408089 t3=394408999 t4=615127271  => delay≈-427 us, offset≈-220718699 us[0m
+[0;32mI (616360) SYNC: t1=616127216 t2=395408094 t3=395409003 t4=616127273  => delay≈-426 us, offset≈-220718696 us[0m
+[0;32mI (617360) SYNC: t1=617127216 t2=396408099 t3=396409008 t4=617127271  => delay≈-427 us, offset≈-220718690 us[0m
+[0;32mI (618360) SYNC: t1=618127216 t2=397408104 t3=397409013 t4=618127273  => delay≈-426 us, offset≈-220718686 us[0m
+[0;32mI (619360) SYNC: t1=619127216 t2=398408109 t3=398409018 t4=619127271  => delay≈-427 us, offset≈-220718680 us[0m
+[0;32mI (620360) SYNC: t1=620127216 t2=399408113 t3=399409023 t4=620127273  => delay≈-426 us, offset≈-220718676 us[0m
+[0;32mI (621360) SYNC: t1=621127216 t2=400408118 t3=400409027 t4=621127271  => delay≈-427 us, offset≈-220718671 us[0m
+[0;32mI (622360) SYNC: t1=622127216 t2=401408123 t3=401409032 t4=622127273  => delay≈-426 us, offset≈-220718667 us[0m
+[0;32mI (623360) SYNC: t1=623127216 t2=402408128 t3=402409037 t4=623127271  => delay≈-427 us, offset≈-220718661 us[0m
+[0;32mI (624360) SYNC: t1=624127216 t2=403408133 t3=403409042 t4=624127273  => delay≈-426 us, offset≈-220718657 us[0m
+[0;32mI (625360) SYNC: t1=625127216 t2=404408137 t3=404409047 t4=625127271  => delay≈-427 us, offset≈-220718651 us[0m
+[0;32mI (626360) SYNC: t1=626127216 t2=405408142 t3=405409051 t4=626127273  => delay≈-426 us, offset≈-220718648 us[0m
+[0;32mI (627360) SYNC: t1=627127216 t2=406408147 t3=406409056 t4=627127271  => delay≈-427 us, offset≈-220718642 us[0m
+[0;32mI (628360) SYNC: t1=628127216 t2=407408152 t3=407409061 t4=628127273  => delay≈-426 us, offset≈-220718638 us[0m
+[0;32mI (629360) SYNC: t1=629127216 t2=408408157 t3=408409066 t4=629127271  => delay≈-427 us, offset≈-220718632 us[0m
+[0;32mI (630360) SYNC: t1=630127216 t2=409408162 t3=409409071 t4=630127273  => delay≈-426 us, offset≈-220718628 us[0m
+[0;32mI (631360) SYNC: t1=631127216 t2=410408166 t3=410409076 t4=631127271  => delay≈-427 us, offset≈-220718622 us[0m
+[0;32mI (632360) SYNC: t1=632127216 t2=411408171 t3=411409080 t4=632127273  => delay≈-426 us, offset≈-220718619 us[0m
+[0;32mI (633360) SYNC: t1=633127216 t2=412408176 t3=412409085 t4=633127271  => delay≈-427 us, offset≈-220718613 us[0m
+[0;32mI (634360) SYNC: t1=634127216 t2=413408181 t3=413409090 t4=634127273  => delay≈-426 us, offset≈-220718609 us[0m
+[0;32mI (635360) SYNC: t1=635127216 t2=414408186 t3=414409095 t4=635127271  => delay≈-427 us, offset≈-220718603 us[0m
+[0;32mI (636360) SYNC: t1=636127216 t2=415408190 t3=415409100 t4=636127273  => delay≈-426 us, offset≈-220718599 us[0m
+[0;32mI (637360) SYNC: t1=637127216 t2=416408195 t3=416409104 t4=637127271  => delay≈-427 us, offset≈-220718594 us[0m
+[0;32mI (638360) SYNC: t1=638127216 t2=417408200 t3=417409109 t4=638127273  => delay≈-426 us, offset≈-220718590 us[0m
+[0;32mI (639360) SYNC: t1=639127216 t2=418408205 t3=418409114 t4=639127271  => delay≈-427 us, offset≈-220718584 us[0m
+[0;32mI (640360) SYNC: t1=640127216 t2=419408210 t3=419409119 t4=640127273  => delay≈-426 us, offset≈-220718580 us[0m
+[0;32mI (641360) SYNC: t1=641127216 t2=420408215 t3=420409124 t4=641127271  => delay≈-427 us, offset≈-220718574 us[0m
+[0;32mI (642360) SYNC: t1=642127216 t2=421408219 t3=421409128 t4=642127273  => delay≈-426 us, offset≈-220718571 us[0m
+[0;32mI (643360) SYNC: t1=643127216 t2=422408224 t3=422409133 t4=643127271  => delay≈-427 us, offset≈-220718565 us[0m
+[0;32mI (644360) SYNC: t1=644127216 t2=423408229 t3=423409138 t4=644127273  => delay≈-426 us, offset≈-220718561 us[0m
+[0;32mI (645360) SYNC: t1=645127216 t2=424408233 t3=424409143 t4=645127271  => delay≈-427 us, offset≈-220718555 us[0m
+[0;32mI (646360) SYNC: t1=646127216 t2=425408238 t3=425409148 t4=646127273  => delay≈-426 us, offset≈-220718551 us[0m
+[0;32mI (647360) SYNC: t1=647127216 t2=426408243 t3=426409153 t4=647127271  => delay≈-427 us, offset≈-220718545 us[0m
+[0;32mI (648360) SYNC: t1=648127216 t2=427408249 t3=427409157 t4=648127273  => delay≈-425 us, offset≈-220718541 us[0m
+[0;32mI (649360) SYNC: t1=649127216 t2=428408260 t3=428409162 t4=649127271  => delay≈-423 us, offset≈-220718532 us[0m
+[0;32mI (650360) SYNC: t1=650127216 t2=429408257 t3=429409167 t4=650127273  => delay≈-426 us, offset≈-220718532 us[0m
+[0;32mI (651360) SYNC: t1=651127216 t2=430408262 t3=430409172 t4=651127271  => delay≈-427 us, offset≈-220718526 us[0m
+[0;32mI (652360) SYNC: t1=652127216 t2=431408267 t3=431409177 t4=652127273  => delay≈-426 us, offset≈-220718522 us[0m
+[0;32mI (653360) SYNC: t1=653127216 t2=432408271 t3=432409181 t4=653127271  => delay≈-427 us, offset≈-220718517 us[0m
+[0;32mI (654360) SYNC: t1=654127216 t2=433408276 t3=433409186 t4=654127273  => delay≈-426 us, offset≈-220718513 us[0m
+[0;32mI (655360) SYNC: t1=655127216 t2=434408281 t3=434409191 t4=655127271  => delay≈-427 us, offset≈-220718507 us[0m
+[0;32mI (656360) SYNC: t1=656127216 t2=435408286 t3=435409196 t4=656127273  => delay≈-426 us, offset≈-220718503 us[0m
+[0;32mI (657360) SYNC: t1=657127216 t2=436408291 t3=436409201 t4=657127271  => delay≈-427 us, offset≈-220718497 us[0m
+[0;32mI (658360) SYNC: t1=658127216 t2=437408295 t3=437409206 t4=658127273  => delay≈-427 us, offset≈-220718494 us[0m
+[0;32mI (659360) SYNC: t1=659127216 t2=438408300 t3=438409210 t4=659127271  => delay≈-427 us, offset≈-220718488 us[0m
+[0;32mI (660360) SYNC: t1=660127216 t2=439408305 t3=439409215 t4=660127273  => delay≈-426 us, offset≈-220718484 us[0m
+[0;32mI (661360) SYNC: t1=661127216 t2=440408311 t3=440409273 t4=661127271  => delay≈-453 us, of

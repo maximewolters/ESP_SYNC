@@ -1,0 +1,2 @@
+source C:/ESP32_Projects/syncpulse/build_slave/bootloader/gdbinit/symbols
+source C:/ESP32_Projects/syncpulse/build_slave/bootloader/gdbinit/connect

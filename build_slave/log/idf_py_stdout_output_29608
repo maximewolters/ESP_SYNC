@@ -1,0 +1,415 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  6 2025 13:55:27[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c4d0h ( 50384) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c4f8 vaddr=3fc93800 size=02a18h ( 10776) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001ef18 vaddr=40374000 size=01100h (  4352) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c744h (116548) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c76c vaddr=40375100 size=0e6d8h ( 59096) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004ae4c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     syncpulse[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (179) app_init: Compile time:     Oct 20 2025 14:36:01[0m
+[0;32mI (184) app_init: ELF file SHA256:  8ea39b4df...[0m
+[0;32mI (188) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FC96B60 len 00052BB0 (330 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (220) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (283) SYNC: App starting...[0m
+[0;32mI (283) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (283) mcpwm: cap_timer resolution is not adjustable in current target, still 80000000Hz[0m
+[0;32mI (293) SYNC: Capture res: 80.00 MHz (tick=12.50 ns)[0m
+[0;33mW (303) uart: GPIO 9 is not usable, maybe used by others[0m
+[0;33mW (303) uart: GPIO 4 is not usable, maybe used by others[0m
+[0;32mI (363) SYNC: Role: SLAVE (from menuconfig)[0m
+[0;32mI (363) SYNC: Running as SLAVE. TX=9 RX=10[0m
+[0;32mI (363) main_task: Returned from app_main()[0m
+[0;33mW (993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (1993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (2993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (3993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (4993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (5993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (6993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (7993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (8993) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (13993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (18993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (23993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (28993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (33993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (38993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (43993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (48993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (53993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (58993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (63993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (68993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (73993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (78993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (83993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (88993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (93993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (98993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (103993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (108993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (113993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (118993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (123993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (128993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (133993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (138993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (143993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (148993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (153993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (158993) SYNC: Unexpected type -1 (sync hdr)[0m
+[0;33mW (163193) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (163653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (163653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (163653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (164653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (164653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (164653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (165653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (165653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (165653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (166653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (166653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (166653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (167653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (167653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (167653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (168653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (168653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (168653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (168653) SYNC: Unexpected type -2 (sync hdr)[0m
+[0;33mW (169663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (170663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (171663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (172663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (173663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (174663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (175663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (176663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (177663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (178663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (179663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (180663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (181663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (182663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (183663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (184663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (185663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (186663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (187663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (188663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (189663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (190663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (191663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (192663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (193663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (194663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (195663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (196663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (197663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (198663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (199663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (200663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (201663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (202663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (203663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (204663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (205663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (206663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (207663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (208663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (209663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (210663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (211663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (212663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (213663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (214663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (215663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (216663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (217663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (218663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (219663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (220663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (221663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (222663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (223663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (224663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (225663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (226663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (227663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (228663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (229663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (230663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (231663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (232663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (233663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (234663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (235663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (236663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (237663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (238663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (239663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (240663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (241663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (242663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (243663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (244663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (245663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (246663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (247663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (248663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (249663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (250663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (251663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (252663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (253663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (254663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (255663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (256663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (257663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (258663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (259663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (260663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (261663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (262663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (263663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (264663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (265663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (266663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (267663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (268663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (269663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (270663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (271663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (272663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (273663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (274663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (275663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (276663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (277663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (278663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (279663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (280663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (281663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (282663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (283663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (284663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (285663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (286663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (287663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (288663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (289663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (290663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (291663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (292663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (293663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (294663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (295663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (296663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (297663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (298663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (299663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (300663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (301663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (302663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (303663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (304663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (305663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (306663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (307663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (308663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (309663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (310663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (311663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (312663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (313663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (314663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (315663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (316663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (317663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (318663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (319663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (320663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (321663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (322663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (323663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (324663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (325663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (326663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (327663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (328663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (329663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (330663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (331663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (332663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (333663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (334663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (335663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (336663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (337663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (338663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (339663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (340663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (341663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (342663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (343663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (344663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (345663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (346663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (347663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (348663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (349663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (350663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (351663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (352663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (353663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (354663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (355663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (356663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (357663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (358663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (359663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (360663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (361663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (362663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (363663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (364663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (365663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (366663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (367663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (368663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (369663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (370663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (371663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (372663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (373663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (374663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (375663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (376663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (377663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (378663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (379663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (380663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (381663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (382663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (383663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (384663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (385663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (386663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (387663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (388663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (389663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (390663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (391663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (392663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (393663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (394663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (395663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (396663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (397663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (398663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (399663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (400663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (401663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (402663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (403663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (404663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (405663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (406663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (407663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (408663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (409663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (410663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (411663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (412663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (413663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (414663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (415663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (416663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (417663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (418663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (419663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (420663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (421663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (422663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (423663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (424663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (425663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (426663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (427663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (428663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (429663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (430663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (431663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (432663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (433663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (434663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (435663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (436663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (437663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (438663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (439663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (440663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (441663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (442663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (443663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (444663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (445663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (446663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (447663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (448663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (449663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (450663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (451663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (452663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (453663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (454663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (455663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (456663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (457663) SYNC: Unexpected type 22 (sync hdr)[0m
+[0;33mW (458

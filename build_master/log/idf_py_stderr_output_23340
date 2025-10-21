@@ -1,0 +1,103 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+[0m
+[0;33m--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bb1: panic_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ae25: esp_system_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40381621: abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+--- 0x4200baef: app_main at C:/ESP32_Projects/syncpulse/main/main.c:310
+--- 0x4201b813: main_task at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b7a5: vPortTaskWrapper at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+[0m
+[0;33m--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bb1: panic_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ae25: esp_system_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40381621: abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+--- 0x4200baef: app_main at C:/ESP32_Projects/syncpulse/main/main.c:310
+--- 0x4201b813: main_task at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b7a5: vPortTaskWrapper at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+[0m
+[0;33m--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bb1: panic_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ae25: esp_system_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40381621: abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+--- 0x4200baef: app_main at C:/ESP32_Projects/syncpulse/main/main.c:310
+--- 0x4201b813: main_task at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b7a5: vPortTaskWrapper at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+[0m
+[0;33m--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bb1: panic_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ae25: esp_system_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40381621: abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+--- 0x4200baef: app_main at C:/ESP32_Projects/syncpulse/main/main.c:310
+--- 0x4201b813: main_task at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b7a5: vPortTaskWrapper at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+[0m
+[0;33m--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bb1: panic_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ae25: esp_system_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40381621: abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+--- 0x4200baef: app_main at C:/ESP32_Projects/syncpulse/main/main.c:310
+--- 0x4201b813: main_task at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b7a5: vPortTaskWrapper at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+[0m
+[0;33m--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bb1: panic_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ae25: esp_system_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40381621: abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+--- 0x4200baef: app_main at C:/ESP32_Projects/syncpulse/main/main.c:310
+--- 0x4201b813: main_task at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037b7a5: vPortTaskWrapper at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200b880: cap_init at C:/ESP32_Projects/syncpulse/main/main.c:149 (discriminator 1)
+[0m
+[0;33m--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375bb1: panic_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ae25: esp_system_abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40381621: abort at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4037ae1b: _esp_error_check_failed at C:/Users/Laptop/esp/v5.4.1/esp-idf/components/esp_system/esp_err.c:49
+--- 0x

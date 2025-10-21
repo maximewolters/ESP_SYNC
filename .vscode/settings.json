@@ -1,0 +1,19 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "C:\\Users\\Laptop\\esp\\v5.4.1\\esp-idf",
+  "idf.pythonInstallPath": "c:\\Users\\Laptop\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.portWin": "COM4",
+  "idf.toolsPathWin": "c:\\Users\\Laptop\\.espressif",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "files.associations": {
+    "compare": "c",
+    "cstdint": "c",
+    "gpio.h": "c",
+    "uart.h": "c"
+  }
+}
