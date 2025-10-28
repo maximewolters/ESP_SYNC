@@ -556,7 +556,7 @@ static void slave_task(void *arg)
 #endif
 
 // ============================ app_main =====================
-void app_main(void)
+void app_prev_main(void)
 {
     ESP_LOGI(TAG, "App start");
     capture_init_start();
